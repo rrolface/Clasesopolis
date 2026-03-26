@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,25 @@ public class BytePresentationController : MonoBehaviour
         panelRachas.SetActive(false);
         panelXP.SetActive(false);
         panelInsignias.SetActive(false);
+
+        // Oculta el panel de diálogo al inicio
+        if (dialogText != null && dialogText.transform.parent != null)
+        {
+            dialogText.transform.parent.gameObject.SetActive(false);
+        }
+
+        StartCoroutine(StartDialogue());
+    }
+
+    IEnumerator StartDialogue()
+    {
+        yield return new WaitForSeconds(2f);
+
+        // Muestra el panel de diálogo después del delay
+        if (dialogText != null && dialogText.transform.parent != null)
+        {
+            dialogText.transform.parent.gameObject.SetActive(true);
+        }
 
         dialogText.text = "Hola, te voy a mostrar las rachas, la XP y las insignias.";
     }
