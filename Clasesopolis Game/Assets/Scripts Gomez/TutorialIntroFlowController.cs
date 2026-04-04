@@ -30,8 +30,9 @@ public class TutorialIntroFlowController : MonoBehaviour
 
     private int currentStep = 0;
 
-    private readonly string[] introMessages =
+    private string[] introMessages =
     {
+        "",
         "¡Bienvenid@ ve! Soy Inspector Byte, tu guía en esta ciudad que apenas está tomando forma: Clasesópolis.",
         "Aquí, nada existe hasta que alguien como tú lo imagine, lo modele… ¡y lo construya!",
         "La ciudad se levantará paso a paso a través de 4 fases de construcción, cada una con un tema clave que te acercará a comprender POO.",
@@ -41,6 +42,17 @@ public class TutorialIntroFlowController : MonoBehaviour
 
     void Start()
     {
+        // --- CAMBIO PARA PERSISTENCIA ---
+        // Verificamos si hay un usuario en la sesión global para personalizar la bienvenida
+        if (GlobalSession.IsAuthenticated())
+        {
+            string nombreUsuario = GlobalSession.user.userName;
+            // Personalizamos el mensaje 0 con el nombre del usuario
+            introMessages[0] = $"¡Bienvenid@ {nombreUsuario}! ya estas a un paso de comenzar";
+        }
+        // --------------------------------
+
+
         if (continueButton != null)
             continueButton.interactable = false;
 
