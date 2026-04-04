@@ -12,7 +12,7 @@ public class MundoManager : MonoBehaviour
         if (GlobalSession.IsAuthenticated())
         {
             string nombre = GlobalSession.user.userName;
-            saludoText.text = $"Bienvenido a Claseópolis, {nombre}. ¡Listo para programar!";
+            saludoText.text = $"Bienvenido, {nombre}";
             Debug.Log("Persistencia exitosa. Usuario actual: " + nombre);
         }
         else
