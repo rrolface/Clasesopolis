@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 359
     height: 553
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -129,7 +129,7 @@ MonoBehaviour:
   - {fileID: 18}
   - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,8 +318,8 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: -2132
+    m_SelectedIDs: 4c970000
+    m_LastClickedID: 38732
     m_ExpandedIDs: 12eb343c
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
       oldMaxSizes: 
       oldSplitSize: 0
     m_HorizontalSplitter:
-      ID: 173
+      ID: 805
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes:
@@ -512,7 +512,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Audios
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Audios
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kevin Aristizabal\Documents\GitHub\Clasesopolis\Clasesopolis
     Game
@@ -531,9 +531,9 @@ MonoBehaviour:
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e9e0000
-    m_LastClickedID: 40574
-    m_ExpandedIDs: 00000000169e000000ca9a3b
+    m_SelectedIDs: 629e0000
+    m_LastClickedID: 40546
+    m_ExpandedIDs: 00000000069e0000629e0000709e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -562,7 +562,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000169e0000
+    m_ExpandedIDs: 00000000069e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -590,8 +590,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000fe98000082f0000006990000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000fe98000082f0000006990000789c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -710,7 +710,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 98faffff
+      m_ExpandedIDs: 641cffffca2bffffcc2dffff5e6bffffec6dffffa46fffff8471ffffe07cffffc288ffffdc88ffff9689ffff988bffff989dffff649effff48a2ffff4aa2ffffe2aaffffeeadffffa2aeffff20b2ffffacb2ffff2ab3ffff80b9ffff7cbaffff3abbffffa4bbffff08fbffff7a9a0000f602010030030100a0080100c60c010096130100241c0100801d0100d81d0100ea1d0100f0210100ae230100ba270100522801004a2d01005c2e0100c63c01005c3d010004550100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1314,9 +1314,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 544, y: 253, z: 0}
+    m_Target: {x: 632.66046, y: 400.08585, z: -1.392334}
     speed: 2
-    m_Value: {x: 544, y: 253, z: 0}
+    m_Value: {x: 632.66046, y: 400.08585, z: -1.392334}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1362,13 +1362,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.01080809, y: 0.016493935, z: -0.00017965787, w: 0.9998094}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.010808049, y: 0.016493872, z: -0.00017965719, w: 0.99980557}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 316.63226
+    m_Target: 423.44473
     speed: 2
-    m_Value: 316.63226
+    m_Value: 423.44473
   m_Ortho:
     m_Target: 0
     speed: 2
