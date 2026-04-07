@@ -9968,6 +9968,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: dedadc69bd6932e40a6d4ed53cb53bde, type: 3}
     panelActivo: {fileID: 895135555}
     componenteTextoUI: {fileID: 2094888471}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar: []
   - nombrePaso: Bienvenida_2
@@ -9975,6 +9977,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 50455aba59cd34143be0dcd6821741b6, type: 3}
     panelActivo: {fileID: 895135555}
     componenteTextoUI: {fileID: 2094888471}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar: []
   - nombrePaso: presentacionFase
@@ -9982,6 +9986,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 193cffd23b1776843be9f281b5802833, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 1931778028}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar: []
   - nombrePaso: clasesYObjetos
@@ -9989,6 +9995,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 7093284e09fdbfa4fbc00edf42a0df99, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 146535248}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar: []
   - nombrePaso: Tipos de datos
@@ -9996,6 +10004,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: edf424b3b612d7b468b333508aba1bfc, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 1446639690}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar: []
   - nombrePaso: Metodos
@@ -10003,6 +10013,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 8a34a669f80746a4298ac94c5517d671, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 2043681872}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar: []
   - nombrePaso: Asociaciones
@@ -10010,6 +10022,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: d8de4682e0e7eae44b1c0fb1807c6a50, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 736978384}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar: []
   - nombrePaso: Puntos_XP
@@ -10017,6 +10031,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 5538c8b27820b2d44b80fa0b5581854e, type: 3}
     panelActivo: {fileID: 757698934}
     componenteTextoUI: {fileID: 1909499848}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 201822545}
     objetosADesactivar: []
@@ -10025,6 +10041,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: ef1ec426e72707d46aa327ac0799e0e7, type: 3}
     panelActivo: {fileID: 757698934}
     componenteTextoUI: {fileID: 1909499848}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 987228718}
     objetosADesactivar:
@@ -10034,6 +10052,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 2a4cbbf2180d5a849917a4ee061f0e14, type: 3}
     panelActivo: {fileID: 757698934}
     componenteTextoUI: {fileID: 1909499848}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 1073150592}
     objetosADesactivar:
@@ -10043,6 +10063,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 18f0e51cf57e0204185077fcd1e3f7c1, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1879044342}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 64891338}
     - {fileID: 569430476}
@@ -10052,6 +10074,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 65525d3046ed84044a27427cf04712b4, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1480235366}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 1992257488}
     - {fileID: 1125426229}
@@ -10064,6 +10088,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 46802caf702bbde4ca1c94a8f05f9411, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1366911747}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 1376241992}
     - {fileID: 2036790498}
@@ -10077,6 +10103,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 30148d462d3f1a54790141ccd2aba9c8, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1839079917}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 1728682094}
     - {fileID: 706761454}
@@ -10090,6 +10118,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 30148d462d3f1a54790141ccd2aba9c8, type: 3}
     panelActivo: {fileID: 312171170}
     componenteTextoUI: {fileID: 1839079917}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 1646846832}
     - {fileID: 1982879585}
@@ -10102,6 +10132,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: feb79ee7c631baf4599250bbf4918b8a, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1124114211}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar:
     - {fileID: 549744691}
     - {fileID: 954999361}
@@ -10114,6 +10146,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 002b2668a3cf9ac4e9ba4f0e836ad94e, type: 3}
     panelActivo: {fileID: 1749118166}
     componenteTextoUI: {fileID: 1561896220}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar:
     - {fileID: 549744691}
@@ -10124,6 +10158,8 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: caa8751609c2c43419fdd803646589c6, type: 3}
     panelActivo: {fileID: 1749118166}
     componenteTextoUI: {fileID: 1561896220}
+    esPasoFinal: 0
+    escenaACargar: 
     objetosAActivar: []
     objetosADesactivar: []
   - nombrePaso: finalTutorial
@@ -10131,20 +10167,12 @@ MonoBehaviour:
     audioPaso: {fileID: 8300000, guid: 0808764472cc806468f5f75e5411c476, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1879044342}
+    esPasoFinal: 1
+    escenaACargar: ZonaJuego
     objetosAActivar:
     - {fileID: 64891338}
     - {fileID: 569430476}
     objetosADesactivar: []
-  - nombrePaso: Fin
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelActivo: {fileID: 311536374}
-    componenteTextoUI: {fileID: 0}
-    objetosAActivar: []
-    objetosADesactivar:
-    - {fileID: 64891338}
-    - {fileID: 569430476}
-    - {fileID: 568791692}
   inicioByte: {fileID: 895135555}
   presentacionFases: {fileID: 2117015113}
   bytePresentationSystem: {fileID: 757698934}
