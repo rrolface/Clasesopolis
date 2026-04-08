@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639107499363407589
-    m_Hash: 3292863679
+      ticks: 639112769983061924
+    m_Hash: 3429047045
   m_LockFileStatus:
     m_FilePath: C:/Users/jgome/Documents/GitHub/Clasesopolis/Clasesopolis Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639107499363442714
-    m_Hash: 2734554473
+      ticks: 639112769983072998
+    m_Hash: 2483388898
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
