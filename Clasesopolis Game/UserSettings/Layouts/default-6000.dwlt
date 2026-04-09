@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 314
     height: 573.3333
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 479.33334
+    y: 424.66666
     width: 965
     height: 146.66666
   m_SerializedDataModeController:
@@ -532,7 +532,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 509.33334}
     m_SelectedIDs: b8c90000
     m_LastClickedID: 51640
-    m_ExpandedIDs: 00000000a8c90000aac90000acc90000b0c90000b2c90000bac9000078f200007af2000000ca9a3b
+    m_ExpandedIDs: 00000000a09a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -561,7 +561,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000a09a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,8 +640,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 966
-    y: 78.66667
+    x: 967
+    y: 24
     width: 313
     height: 547.3333
   m_SerializedDataModeController:
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 78.66667
+    y: 24
     width: 175
     height: 374.66666
   m_SerializedDataModeController:
@@ -707,23 +707,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 003c0100
-      m_LastClickedID: 80896
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 94e5feff98edfeff26effeffc4f1feff58fafeff66fcfeff7e04ffffd408ffff800cffff161bffffe21cffff861dffff0420ffffbc3affffbe3dffff323effffa83fffff8042ffffe442ffff3e43ffff9843ffffa444ffff2c46ffff8c49ffff70ed0000ce0c0100ba0e010088100100ba190100a82e010046310100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Canvas
-        m_OriginalName: Canvas
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 80896
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 4}
@@ -755,8 +755,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 176
-    y: 78.66667
+    x: 177
+    y: 24
     width: 788
     height: 374.66666
   m_SerializedDataModeController:
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.051978014, y: 0.003994423, z: -0.00017813269, w: 0.9986747}
     speed: 2
-    m_Value: {x: 0.051976383, y: 0.0029956584, z: -0.00012615103, w: 0.9986439}
+    m_Value: {x: -0.051978014, y: -0.003994423, z: 0.0001781327, w: -0.99867475}
   m_Size:
     m_Target: 450.6928
     speed: 2
