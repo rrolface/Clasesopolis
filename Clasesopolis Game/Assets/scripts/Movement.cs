@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 movimiento = new Vector3(x, 0, z);
-        transform.Translate(movimiento * velocidad * Time.deltaTime, Space.World);
+        transform.Translate(movimiento * velocidad * Time.deltaTime, Space.Self);
     }
 }
     
