@@ -28,6 +28,9 @@ public class AuthManager : MonoBehaviour
 
     [Header("Navegación")]
     public MainMenuController mainMenuController; // Sistema de menús
+    public GameObject panelBienvenidaPostLogin; // El panel que quieres mostrar
+    public TMP_Text textoBienvenidaNombre;     // El texto: "Bienvenido, [Nombre]"
+    public string nombreEscenaTutorial = "Tutorial"; // Nombre de tu escena de tutorial
 
     void Start()
     {
@@ -51,6 +54,29 @@ public class AuthManager : MonoBehaviour
         });
     }
 
+
+    // Esta función se encarga de preparar el panel antes de mostrarlo
+    private void MostrarPanelBienvenida(string nombreUsuario)
+    {
+        if (panelBienvenidaPostLogin != null)
+        {
+            // Personalizamos el mensaje
+            if (textoBienvenidaNombre != null)
+                textoBienvenidaNombre.text = $"Bienvenido {nombreUsuario}, la experiencia está lista para comenzar. Vamos pues que Clasesopolis te espera";
+
+            // Activamos el panel (asegúrate de que esté encima de todo en el Canvas)
+            panelBienvenidaPostLogin.SetActive(true);
+        }
+    }
+
+    // ESTA FUNCIÓN VA EN EL BOTÓN "COMENZAR" DEL PANEL DE BIENVENIDA
+    public void BotonIrAlTutorial()
+    {
+        // Antes de irnos, asegúrate de que el tiempo corra (por si acaso)
+        Time.timeScale = 1f;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nombreEscenaTutorial);
+    }
+
     // --- BOTONES ---
     public void BotonIniciarSesion()
     {
@@ -67,12 +93,13 @@ public class AuthManager : MonoBehaviour
     {
         warningLoginText.text = "Conectando...";
 
+        // Iniciamos la tarea de Firebase
         Task<AuthResult> LoginTask = auth.SignInWithEmailAndPasswordAsync(_email, _password);
         yield return new WaitUntil(predicate: () => LoginTask.IsCompleted);
 
         if (LoginTask.Exception != null)
         {
-            // MANEJO DE ERRORES DEL TUTORIAL
+            // --- MANEJO DE ERRORES ---
             FirebaseException firebaseEx = LoginTask.Exception.GetBaseException() as FirebaseException;
             AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
 
@@ -89,12 +116,19 @@ public class AuthManager : MonoBehaviour
         }
         else
         {
-            // Éxito
+            // --- ÉXITO DE LOGUEO ---
             user = LoginTask.Result.User;
             warningLoginText.text = "¡Logueado con éxito!";
-            Debug.LogFormat("Usuario logueado: {0} ({1})", user.DisplayName, user.Email);
 
-            // Aquí se coloca la escena del juego.
+            // 1. EL PUENTE (Paso 1): Pasamos el nombre de Firebase a tu sistema Global
+            // Creamos la instancia del objeto 'user' dentro de GlobalSession
+            GlobalSession.user = new user { userName = user.DisplayName };
+
+            Debug.LogFormat("Persistencia activada: {0} guardado en GlobalSession", GlobalSession.user.userName);
+
+            // 2. LA BIENVENIDA (Paso 2): Llamamos a la función que activa el panel
+            // Le pasamos el nombre que recibimos de Firebase
+            MostrarPanelBienvenida(user.DisplayName);
         }
     }
 
