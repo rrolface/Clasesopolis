@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Video;
+using System.Collections;
 
 public class IntroSequenceManager : MonoBehaviour
 {
@@ -7,44 +8,56 @@ public class IntroSequenceManager : MonoBehaviour
     public VideoPlayer reproductorFondo;
     public GameObject panelBienvenido;
 
-    // Referencia a la música
-    public AudioSource musicaDeFondo;
+    // Referencia al Canvas Group que controla la transparencia
+    public CanvasGroup grupoCanvasBienvenido;
 
-    // Para pruebas comentar cuando termine
-    [Header("Debug")]
-    public bool saltarIntroParaPruebas = true;
+    [Header("Ajustes")]
+    public AudioSource musicaDeFondo;
+    public float duracionFade = 1.5f; // Tiempo en segundos que tardará en aparecer
+
     void Start()
     {
-        // 1. Asegura de que la UI esté apagada al arrancar
+        // Apaga el panel
         panelBienvenido.SetActive(false);
 
-        // 2. Al terminar el video Muesstra la UI"
-        reproductorFondo.loopPointReached += MostrarUI;
-
-        // Para pruebas únicamente
-        panelBienvenido.SetActive(false);
-
-        // PRUEBA
-        if (saltarIntroParaPruebas)
+        //  Inicia la transparencia en 0 
+        if (grupoCanvasBienvenido != null)
         {
-            reproductorFondo.Stop();
-            MostrarUI(reproductorFondo);
-            return;
+            grupoCanvasBienvenido.alpha = 0f;
         }
 
+        // Suscribe el evento al terminar el video
         reproductorFondo.loopPointReached += MostrarUI;
     }
+
     void MostrarUI(VideoPlayer vp)
     {
-        // 3. Enciende el panel principal
+        // Enciende el objeto 
         panelBienvenido.SetActive(true);
 
-        // Reproduce la música cuando se muestra la UI
+        // Inicia la Corrutina
+        StartCoroutine(EfectoFadeIn());
+
+        // Reproduce la música
         if (musicaDeFondo != null)
         {
             musicaDeFondo.Play();
         }
+    }
 
-        //Debug.Log("El video de introducción ha terminado. Pantalla de bienvenida activa.");
+    // --- FADE-IN ---
+    IEnumerator EfectoFadeIn()
+    {
+        float tiempoPasado = 0f;
+
+        while (tiempoPasado < duracionFade)
+        {
+            tiempoPasado += Time.deltaTime;
+
+            grupoCanvasBienvenido.alpha = Mathf.Clamp01(tiempoPasado / duracionFade);
+
+            yield return null;
+        }
+        grupoCanvasBienvenido.alpha = 1f;
     }
 }

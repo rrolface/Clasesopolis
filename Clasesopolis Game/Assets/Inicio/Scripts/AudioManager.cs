@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [Header("Referencias de Audio")]
+    [Header("Reproductores de Audio")]
+    public AudioSource musicSource;     // Para la música de fondo
     public AudioSource sfxSource;       // Reproductor de efectos
+
+    [Header("Clips de Efectos")]
     public AudioClip sonidoHover;       // Archivo de audio para hover
     public AudioClip sonidoClick;       // Archivo de audio para click
 
