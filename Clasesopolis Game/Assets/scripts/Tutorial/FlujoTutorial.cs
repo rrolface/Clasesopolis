@@ -14,6 +14,12 @@ public class FlujoTutorial : MonoBehaviour
         public GameObject panelActivo;
         public Text componenteTextoUI;
 
+
+        [Header("Configuración de Retos")]
+        public bool esPasoDeEjercicio; // NUEVO: Bloquea el botón Continuar
+        public GameObject objetoDelEjercicio; // El panel o lógica del minijuego
+
+
         [Header("Configuración de Salida")]
         public bool esPasoFinal; // El "chulito" para marcar si este paso cierra el tutorial
         public string escenaACargar; // Nombre de la escena: "ZonaJuego"
@@ -131,6 +137,18 @@ public class FlujoTutorial : MonoBehaviour
 
         TutorialStep pasoActual = pasosTutorial[currentStep];
 
+        // 2. LÓGICA DE BLOQUEO POR EJERCICIO
+        if (pasoActual.esPasoDeEjercicio)
+        {
+            continueButton.gameObject.SetActive(false); // Escondemos el botón de seguir
+            if (pasoActual.objetoDelEjercicio != null)
+                pasoActual.objetoDelEjercicio.SetActive(true); // Encendemos el minijuego
+        }
+        else
+        {
+            continueButton.gameObject.SetActive(true);
+        }
+
         // Manejo de paneles principales
         if (panelQueDejamos != null && panelQueDejamos != pasoActual.panelActivo)
         {
@@ -171,5 +189,12 @@ public class FlujoTutorial : MonoBehaviour
             if (inicioByte) inicioByte.SetActive(false);
             if (presentacionFases) presentacionFases.SetActive(true);
         }
+    }
+
+    // FUNCIÓN CLAVE: La llama el minijuego cuando el usuario gana
+    public void HabilitarContinuar()
+    {
+        continueButton.gameObject.SetActive(true);
+        Debug.Log("Reto superado. El usuario puede continuar.");
     }
 }
