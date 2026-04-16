@@ -37,6 +37,30 @@ public class SettingsMenuController : MonoBehaviour
         // 2. Conecta los sliders por código para que actualicen el volumen en tiempo real
         if (sliderMusica != null) sliderMusica.onValueChanged.AddListener(ActualizarVolumenMusica);
         if (sliderSfx != null) sliderSfx.onValueChanged.AddListener(ActualizarVolumenSfx);
+
+        // 3. Cargar el volumen. Si es la primera vez que se juega, por defecto será 0.5f (mitad).
+        if (sliderMusica != null)
+        {
+            sliderMusica.value = PlayerPrefs.GetFloat("VolMusica", 0.5f);
+            ActualizarVolumenMusica(sliderMusica.value); // Sincroniza el AudioSource real
+        }
+
+        if (sliderSfx != null)
+        {
+            sliderSfx.value = PlayerPrefs.GetFloat("VolSfx", 0.5f);
+            ActualizarVolumenSfx(sliderSfx.value);
+        }
+
+        // 4. Carga el estado del botón Mute (Silencio)
+        musicaMuteada = PlayerPrefs.GetInt("MusicaMute", 0) == 1; // 1 es true, 0 es false
+        sfxMuteado = PlayerPrefs.GetInt("SfxMute", 0) == 1;
+
+        // Actualiza los íconos visuales y el estado físico del audio
+        if (iconoBotonMusica != null) iconoBotonMusica.sprite = musicaMuteada ? spriteMusicaOff : spriteMusicaOn;
+        if (audioManager != null && audioManager.musicSource != null) audioManager.musicSource.mute = musicaMuteada;
+
+        if (iconoBotonSfx != null) iconoBotonSfx.sprite = sfxMuteado ? spriteSfxOff : spriteSfxOn;
+        if (audioManager != null && audioManager.sfxSource != null) audioManager.sfxSource.mute = sfxMuteado;
     }
 
     // --- FUNCIONES PARA ABRIR/CERRAR PANELES ---
