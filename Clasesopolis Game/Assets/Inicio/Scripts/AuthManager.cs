@@ -62,7 +62,9 @@ public class AuthManager : MonoBehaviour
         {
             // Personalizamos el mensaje
             if (textoBienvenidaNombre != null)
-                textoBienvenidaNombre.text = $"Bienvenido {nombreUsuario}, la experiencia está lista para comenzar. Vamos pues que Clasesopolis te espera";
+                textoBienvenidaNombre.text = $"<b>¡¡¡Bienvenido!!!</b> \n" +
+                    $"{nombreUsuario} La experiencia está lista para comenzar." +
+                    $"Vamos pues que Clasesopolis te espera";
 
             // Activamos el panel (asegúrate de que esté encima de todo en el Canvas)
             panelBienvenidaPostLogin.SetActive(true);
