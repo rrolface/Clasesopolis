@@ -313,6 +313,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 1800316452}
     desactivarAlEntrar: []
@@ -327,6 +328,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 2119607180}
     desactivarAlEntrar:
@@ -340,6 +342,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 543251188}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar: []
     desactivarAlEntrar:
     - {fileID: 2119607180}
@@ -354,6 +357,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 409022795}
     desactivarAlEntrar:
@@ -367,6 +371,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 1467353010}
     desactivarAlEntrar:
@@ -380,6 +385,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 2070103598}
     desactivarAlEntrar:
@@ -393,6 +399,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 1499433433}
     desactivarAlEntrar:
@@ -409,6 +416,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 1810977273}
     desactivarAlEntrar:
@@ -422,6 +430,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 1206714655}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 1206714655}
     desactivarAlEntrar:
@@ -435,6 +444,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 548772112}
     desactivarAlEntrar:
@@ -448,6 +458,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 1555536681}
     desactivarAlEntrar:
@@ -461,6 +472,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 1511988387}
     desactivarAlEntrar:
@@ -474,6 +486,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 1594451759}
     desactivarAlEntrar:
@@ -487,6 +500,7 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 590119095}
     desactivarAlEntrar:
@@ -500,10 +514,25 @@ MonoBehaviour:
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
     escenaDestino: 
+    numeroFase: 1
     activarAlEntrar:
     - {fileID: 590119095}
     desactivarAlEntrar:
     - {fileID: 1511988387}
+  - nombrePaso: Final
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 752424388}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 1
+    escenaDestino: ZonaJuego
+    numeroFase: 1
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
 --- !u!114 &6822669
 MonoBehaviour:
   m_ObjectHideFlags: 0

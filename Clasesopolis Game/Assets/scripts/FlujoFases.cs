@@ -13,7 +13,7 @@ public class FlujoFases : MonoBehaviour
         public string nombrePaso;
         [TextArea(3, 5)] public string mensajeTexto;
         public AudioClip audioPaso;
-        public GameObject panelPrincipal; // El panel que contiene la UI de este paso
+        public GameObject panelPrincipal;
         public TextMeshProUGUI textoUI;
 
         [Header("Configuración de Retos")]
@@ -23,6 +23,9 @@ public class FlujoFases : MonoBehaviour
         [Header("Configuración de Salida")]
         public bool esPasoFinal;
         public string escenaDestino;
+
+        [Header("Número de fase para desbloqueo (solo en paso final)")]
+        public int numeroFase = 1;
 
         [Header("Acciones de Objetos")]
         public List<GameObject> activarAlEntrar;
@@ -40,13 +43,11 @@ public class FlujoFases : MonoBehaviour
 
     void Start()
     {
-        // Si hay un usuario logueado, personalizamos el primer paso
         if (GlobalSession.IsAuthenticated() && pasos.Count > 0)
         {
             pasos[0].mensajeTexto = pasos[0].mensajeTexto.Replace("{user}", GlobalSession.user.userName);
         }
 
-        // Reseteamos el estado visual inicial
         foreach (var p in pasos)
         {
             if (p.panelPrincipal != null) p.panelPrincipal.SetActive(false);
@@ -57,25 +58,26 @@ public class FlujoFases : MonoBehaviour
 
     public void AvanzarPaso()
     {
-        // 1. Antes de avanzar, checamos si el paso que estamos dejando es el final
+        // 1. Chequeo del paso final
         if (indiceActual >= 0 && indiceActual < pasos.Count)
         {
-            if (pasos[indiceActual].esPasoFinal)
+            PasoDeFase pasoQueTermina = pasos[indiceActual];
+            if (pasoQueTermina.esPasoFinal)
             {
-                ProgresoGlobal.RegistrarFinDeFase();
-                CargarSiguienteEscena(pasos[indiceActual].escenaDestino);
+                // FIX: le pasamos el número de fase para que desbloquee la siguiente
+                ProgresoGlobal.RegistrarFinDeFase(pasoQueTermina.numeroFase);
+                CargarSiguienteEscena(pasoQueTermina.escenaDestino);
                 return;
             }
         }
 
-        // 2. Limpieza de audio y paneles anteriores
+        // 2. Limpieza
         if (parlanteVoces != null) parlanteVoces.Stop();
-
         GameObject panelAnterior = (indiceActual >= 0) ? pasos[indiceActual].panelPrincipal : null;
 
         indiceActual++;
 
-        // 3. Verificamos si nos pasamos del límite
+        // 3. Límite
         if (indiceActual >= pasos.Count)
         {
             Debug.Log("Se terminaron los pasos de esta fase.");
@@ -84,14 +86,14 @@ public class FlujoFases : MonoBehaviour
 
         PasoDeFase pasoActual = pasos[indiceActual];
 
-        // 4. LÓGICA DE PANELES
+        // 4. Paneles
         if (panelAnterior != null && panelAnterior != pasoActual.panelPrincipal)
             panelAnterior.SetActive(false);
 
         if (pasoActual.panelPrincipal != null)
             pasoActual.panelPrincipal.SetActive(true);
 
-        // 5. BLOQUEO POR RETO
+        // 5. Bloqueo por reto
         if (pasoActual.esRetoInteractivos)
         {
             botonContinuar.gameObject.SetActive(false);
@@ -102,11 +104,11 @@ public class FlujoFases : MonoBehaviour
             botonContinuar.gameObject.SetActive(true);
         }
 
-        // 6. ACTIVACIÓN / DESACTIVACIÓN DE OBJETOS
+        // 6. Activación / desactivación
         foreach (GameObject obj in pasoActual.activarAlEntrar) if (obj != null) obj.SetActive(true);
         foreach (GameObject obj in pasoActual.desactivarAlEntrar) if (obj != null) obj.SetActive(false);
 
-        // 7. TEXTO Y AUDIO (Con protección contra nulos)
+        // 7. Texto y audio
         if (pasoActual.textoUI != null) pasoActual.textoUI.text = pasoActual.mensajeTexto;
 
         if (pasoActual.audioPaso != null && parlanteVoces != null)

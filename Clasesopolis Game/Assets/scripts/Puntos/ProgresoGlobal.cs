@@ -8,7 +8,6 @@ public static class ProgresoGlobal
     public static int RachaDias = 0;
     public static List<string> Insignias = new List<string>();
 
-    // Para la lógica de las 24 horas
     private static string UltimaConexionKey = "UltimaConexion";
 
     public static void SumarXP(int cantidad)
@@ -17,7 +16,7 @@ public static class ProgresoGlobal
         Debug.Log($"¡Ganaste {cantidad} XP! Total: {XP}");
     }
 
-    public static void RegistrarFinDeFase()
+    public static void RegistrarFinDeFase(int numeroFase = 0)
     {
         string fechaGuardada = PlayerPrefs.GetString(UltimaConexionKey, "");
         DateTime ahora = DateTime.Now;
@@ -26,7 +25,6 @@ public static class ProgresoGlobal
         {
             DateTime ultimaVez = DateTime.Parse(fechaGuardada);
             TimeSpan diferencia = ahora - ultimaVez;
-
             if (diferencia.TotalHours <= 24)
             {
                 RachaDias++;
@@ -34,12 +32,21 @@ public static class ProgresoGlobal
             }
             else
             {
-                RachaDias = 1; // Se reinicia si pasó más de un día
+                RachaDias = 1;
             }
         }
         else { RachaDias = 1; }
 
         PlayerPrefs.SetString(UltimaConexionKey, ahora.ToString());
+
+        if (numeroFase > 0 && FaseManager.Instance != null)
+        {
+            FaseManager.Instance.CompletarFase(numeroFase);
+        }
+        else if (numeroFase > 0)
+        {
+            Debug.LogWarning($"FaseManager no encontrado. Fase {numeroFase} no completada.");
+        }
     }
 
     public static void GanarInsignia(string nombreInsignia)
