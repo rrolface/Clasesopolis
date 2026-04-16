@@ -14,6 +14,9 @@ public class ZonaConstruccion : MonoBehaviour
 
     public GameObject ZonaVisualPiso;
 
+    public GameObject PanelFases;
+
+
     void Start()
     {
         panelUI.SetActive(false);
@@ -62,5 +65,10 @@ public class ZonaConstruccion : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+    }
+
+    public void ActivarPanel()
+    {
+        PanelFases.SetActive(true);
     }
 }

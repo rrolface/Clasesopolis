@@ -11,6 +11,12 @@ public class Movement : MonoBehaviour
 
         Vector3 movimiento = new Vector3(x, 0, z);
         transform.Translate(movimiento * velocidad * Time.deltaTime, Space.Self);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }
     

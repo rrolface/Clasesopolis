@@ -62,7 +62,7 @@ public class AuthManager : MonoBehaviour
         {
             // Personalizamos el mensaje
             if (textoBienvenidaNombre != null)
-                textoBienvenidaNombre.text = $"<b>¡¡¡Bienvenido!!!</b> \n" +
+                textoBienvenidaNombre.text = $"<b>Bienvenido</b> \n" +
                     $"{nombreUsuario} La experiencia está lista para comenzar." +
                     $"Vamos pues que Clasesopolis te espera";
 
