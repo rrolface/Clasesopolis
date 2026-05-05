@@ -1,11 +1,14 @@
 using UnityEngine;
 
+/// <summary>
+/// Componente "disparador": al activarse el GameObject que lo lleva,
+/// le suma +1 a la racha. Se usa colocÃ¡ndolo en una de las listas
+/// activarAlEntrar de un PasoDeFase.
+/// </summary>
 public class TriggerRacha : MonoBehaviour
 {
     void OnEnable()
     {
-        // Llama a la función que ya tenemos para validar las 24h y sumar +1
-        ProgresoGlobal.RegistrarFinDeFase();
-        Debug.Log("Racha actualizada en el sistema global.");
+        ProgresoGlobal.IncrementarRacha();
     }
 }

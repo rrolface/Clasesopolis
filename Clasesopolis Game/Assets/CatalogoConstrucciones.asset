@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65ba3154d53b044e97ce53693732c54, type: 3}
+  m_Name: CatalogoConstrucciones
+  m_EditorClassIdentifier: 
+  construcciones:
+  - id: build_1
+    nombre: Gato Tejada
+    descripcion: "s una ic\xF3nica escultura de bronce de 3,5 metros de altura y
+      3 toneladas, creada por el artista Hernando Tejada en 1996 y donada a Cali,
+      Colombia"
+    icono: {fileID: 21300000, guid: dd186ca06b34ff740a17eec44a2d8eac, type: 3}
+    prefab: {fileID: 5400747575106271817, guid: c2db82c95b1a83043a48a5f5dfdcdea5, type: 3}
+  - id: build_2
+    nombre: Iglesa la Ermita
+    descripcion: "La iglesia La Ermita en Cali, Colombia, es un ic\xF3nico templo
+      neog\xF3tico construido entre 1930 y 1948 tras la destrucci\xF3n de una construcci\xF3n
+      colonial anterior por un terremoto en 1925."
+    icono: {fileID: 21300000, guid: 360c124cf291cc6419bfb1384e423051, type: 3}
+    prefab: {fileID: 828923653124010941, guid: 4e3b544c54a12cb42999d4fd584a6e51, type: 3}
