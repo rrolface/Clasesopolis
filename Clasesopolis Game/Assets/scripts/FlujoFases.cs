@@ -16,21 +16,36 @@ public class FlujoFases : MonoBehaviour
         public GameObject panelPrincipal;
         public TextMeshProUGUI textoUI;
 
-        [Header("Configuraci�n de Retos")]
+        [Header("Configuración de Retos")]
         public bool esRetoInteractivos;
         public GameObject objetoDelReto;
 
-        [Header("Configuraci�n de Salida")]
+        [Header("Configuración de Salida")]
         public bool esPasoFinal;
         public string escenaDestino;
 
-        [Header("N�mero de fase para desbloqueo (solo en paso final)")]
+        [Header("Número de fase para desbloqueo (solo en paso final)")]
         public int numeroFase = 1;
+
+        [Header("Checkpoint")]
+        [Tooltip("Si está activo, al ENTRAR a este paso se guarda como checkpoint. " +
+                 "Si el usuario sale de la fase y vuelve, retomará desde aquí.")]
+        public bool esCheckpoint;
 
         [Header("Acciones de Objetos")]
         public List<GameObject> activarAlEntrar;
         public List<GameObject> desactivarAlEntrar;
     }
+
+    [Header("Identificador de fase")]
+    [Tooltip("Número de esta fase (1, 2, 3...). Se usa para guardar/recuperar el checkpoint " +
+             "y para marcarla como completada por usuario. Debe coincidir con el número usado " +
+             "en FaseManager. Si lo dejas en 0, los checkpoints quedan deshabilitados para esta fase.")]
+    public int numeroFase = 0;
+
+    [Tooltip("Si está activo, al iniciar la escena salta automáticamente al checkpoint guardado " +
+             "para esta fase y este usuario. Apágalo si quieres forzar un inicio desde el principio.")]
+    public bool usarCheckpointsAlIniciar = true;
 
     [Header("Referencias de UI General")]
     public Button botonContinuar;
@@ -48,9 +63,22 @@ public class FlujoFases : MonoBehaviour
             pasos[0].mensajeTexto = pasos[0].mensajeTexto.Replace("{user}", GlobalSession.user.userName);
         }
 
+        // Apaga todos los paneles por defecto
         foreach (var p in pasos)
         {
             if (p.panelPrincipal != null) p.panelPrincipal.SetActive(false);
+        }
+
+        // ----- Salto a checkpoint -----
+        if (usarCheckpointsAlIniciar && numeroFase > 0)
+        {
+            int chk = CheckpointsFase.ObtenerCheckpoint(numeroFase);
+            if (chk >= 0 && chk < pasos.Count)
+            {
+                // -1 porque AvanzarPaso() incrementa antes de aplicar
+                indiceActual = chk - 1;
+                Debug.Log($"[FlujoFases] Retomando fase {numeroFase} desde checkpoint #{chk} ({pasos[chk].nombrePaso})");
+            }
         }
 
         AvanzarPaso();
@@ -64,8 +92,16 @@ public class FlujoFases : MonoBehaviour
             PasoDeFase pasoQueTermina = pasos[indiceActual];
             if (pasoQueTermina.esPasoFinal)
             {
-                // FIX: le pasamos el n�mero de fase para que desbloquee la siguiente
                 ProgresoGlobal.RegistrarFinDeFase(pasoQueTermina.numeroFase);
+
+                // Marcamos la fase como completada para este usuario y limpiamos checkpoint
+                // así un nuevo intento empieza desde el principio.
+                if (numeroFase > 0)
+                {
+                    CheckpointsFase.MarcarCompletada(numeroFase);
+                    CheckpointsFase.LimpiarCheckpoint(numeroFase);
+                }
+
                 CargarSiguienteEscena(pasoQueTermina.escenaDestino);
                 return;
             }
@@ -73,11 +109,12 @@ public class FlujoFases : MonoBehaviour
 
         // 2. Limpieza
         if (parlanteVoces != null) parlanteVoces.Stop();
-        GameObject panelAnterior = (indiceActual >= 0) ? pasos[indiceActual].panelPrincipal : null;
+        GameObject panelAnterior = (indiceActual >= 0 && indiceActual < pasos.Count)
+            ? pasos[indiceActual].panelPrincipal : null;
 
         indiceActual++;
 
-        // 3. L�mite
+        // 3. Límite
         if (indiceActual >= pasos.Count)
         {
             Debug.Log("Se terminaron los pasos de esta fase.");
@@ -96,15 +133,15 @@ public class FlujoFases : MonoBehaviour
         // 5. Bloqueo por reto
         if (pasoActual.esRetoInteractivos)
         {
-            botonContinuar.gameObject.SetActive(false);
+            if (botonContinuar != null) botonContinuar.gameObject.SetActive(false);
             if (pasoActual.objetoDelReto != null) pasoActual.objetoDelReto.SetActive(true);
         }
         else
         {
-            botonContinuar.gameObject.SetActive(true);
+            if (botonContinuar != null) botonContinuar.gameObject.SetActive(true);
         }
 
-        // 6. Activaci�n / desactivaci�n
+        // 6. Activación / desactivación
         foreach (GameObject obj in pasoActual.activarAlEntrar) if (obj != null) obj.SetActive(true);
         foreach (GameObject obj in pasoActual.desactivarAlEntrar) if (obj != null) obj.SetActive(false);
 
@@ -115,6 +152,12 @@ public class FlujoFases : MonoBehaviour
         {
             parlanteVoces.clip = pasoActual.audioPaso;
             parlanteVoces.Play();
+        }
+
+        // 8. Checkpoint: si este paso está marcado como punto de control, lo guardamos.
+        if (pasoActual.esCheckpoint && numeroFase > 0)
+        {
+            CheckpointsFase.GuardarCheckpoint(numeroFase, indiceActual);
         }
     }
 
@@ -130,5 +173,27 @@ public class FlujoFases : MonoBehaviour
             Time.timeScale = 1f;
             SceneManager.LoadScene(nombre);
         }
+    }
+
+    // ============================================================
+    //  ACCESOS PÚBLICOS (para PanelDecisionFase, botones, etc.)
+    // ============================================================
+
+    public int IndiceActual => indiceActual;
+
+    /// <summary>
+    /// Borra el checkpoint de esta fase y reinicia el flujo desde el principio.
+    /// Útil para un botón "Reiniciar fase" en el menú de selección.
+    /// </summary>
+    public void ReiniciarFaseDesdeCero()
+    {
+        if (numeroFase > 0)
+            CheckpointsFase.LimpiarCheckpoint(numeroFase);
+
+        indiceActual = -1;
+        foreach (var p in pasos)
+            if (p.panelPrincipal != null) p.panelPrincipal.SetActive(false);
+
+        AvanzarPaso();
     }
 }

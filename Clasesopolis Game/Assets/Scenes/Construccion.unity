@@ -7539,6 +7539,7 @@ GameObject:
   - component: {fileID: 936338193}
   - component: {fileID: 936338192}
   - component: {fileID: 936338191}
+  - component: {fileID: 936338194}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -7608,19 +7609,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 936338192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &936338192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7659,6 +7648,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936338189}
   m_CullTransparentMesh: 1
+--- !u!114 &936338194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936338189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17369fd7669cd8f49a0047415de0b1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numeroFase: 1
+  iconoCandado: {fileID: 796258562}
 --- !u!1 &942211978
 GameObject:
   m_ObjectHideFlags: 0
@@ -9385,11 +9388,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1476604379}
+  - {fileID: 789207358}
   - {fileID: 1620574489}
   - {fileID: 1670976800}
   - {fileID: 1441356564}
   - {fileID: 1890228647}
-  - {fileID: 789207358}
   - {fileID: 548342025}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14434,13 +14437,14 @@ GameObject:
   - component: {fileID: 1620574489}
   - component: {fileID: 1620574491}
   - component: {fileID: 1620574490}
+  - component: {fileID: 1620574492}
   m_Layer: 5
   m_Name: Panelfases
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1620574489
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14504,6 +14508,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620574488}
   m_CullTransparentMesh: 1
+--- !u!114 &1620574492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620574488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0440a085db93e9458a1f2ebc1f92099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escenaFase1: 4
+  escenaFase2: 5
+  escenaFase3: 6
+  escenaFase4: -1
 --- !u!1001 &1633807089
 PrefabInstance:
   m_ObjectHideFlags: 0

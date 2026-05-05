@@ -21,6 +21,10 @@ public class ConfiguracionPruebas : MonoBehaviour
              "carga de PlayerPrefs durante esta sesión. Todo vive solo en memoria.")]
     public bool desactivarPersistenciaInventario = true;
 
+    [Tooltip("Si está activo, los checkpoints y el estado 'fase completada' NO se " +
+             "guardan ni se cargan de PlayerPrefs durante esta sesión.")]
+    public bool desactivarPersistenciaCheckpoints = true;
+
     [Header("Limpieza al iniciar")]
     [Tooltip("Borra XP, racha e insignias en memoria al arrancar la escena.")]
     public bool reiniciarRecompensasEnMemoria = true;
@@ -28,9 +32,16 @@ public class ConfiguracionPruebas : MonoBehaviour
     [Tooltip("Vacía el inventario de construcciones en memoria al arrancar.")]
     public bool reiniciarInventarioEnMemoria = true;
 
+    [Tooltip("Vacía los checkpoints y 'fase completada' en memoria al arrancar.")]
+    public bool reiniciarCheckpointsEnMemoria = true;
+
     [Tooltip("Borra TAMBIÉN los datos guardados en disco (PlayerPrefs) del inventario. " +
              "Útil para empezar de cero después de varias sesiones de prueba.")]
     public bool borrarDatosGuardadosEnDisco = false;
+
+    [Tooltip("Borra TAMBIÉN los checkpoints y 'fase completada' guardados en disco " +
+             "para el usuario actual.")]
+    public bool borrarCheckpointsEnDisco = false;
 
     [Header("Logs")]
     [Tooltip("Imprime un resumen de la configuración aplicada al iniciar.")]
@@ -38,13 +49,18 @@ public class ConfiguracionPruebas : MonoBehaviour
 
     void Awake()
     {
-        // 1) Aplicamos el flag de persistencia ANTES de cualquier carga.
+        // 1) Aplicamos los flags de persistencia ANTES de cualquier carga.
         InventarioConstrucciones.PersistenciaHabilitada = !desactivarPersistenciaInventario;
+        CheckpointsFase.PersistenciaHabilitada = !desactivarPersistenciaCheckpoints;
 
         // 2) Borrar disco si se pidió (antes de cualquier lectura).
         if (borrarDatosGuardadosEnDisco)
         {
             InventarioConstrucciones.BorrarDatosGuardados();
+        }
+        if (borrarCheckpointsEnDisco)
+        {
+            CheckpointsFase.LimpiarTodoDelUsuario();
         }
 
         // 3) Limpiar memoria si se pidió.
@@ -58,14 +74,21 @@ public class ConfiguracionPruebas : MonoBehaviour
             InventarioConstrucciones.ReiniciarEnMemoria();
         }
 
+        if (reiniciarCheckpointsEnMemoria)
+        {
+            CheckpointsFase.ReiniciarEnMemoria();
+        }
+
         if (mostrarLogResumen)
         {
             Debug.Log(
                 "[ConfiguracionPruebas] Aplicada -> " +
-                $"persistencia={(desactivarPersistenciaInventario ? "OFF" : "ON")}, " +
+                $"persistInv={(desactivarPersistenciaInventario ? "OFF" : "ON")}, " +
+                $"persistChk={(desactivarPersistenciaCheckpoints ? "OFF" : "ON")}, " +
                 $"reiniciarRecompensas={reiniciarRecompensasEnMemoria}, " +
-                $"reiniciarInventario={reiniciarInventarioEnMemoria}, " +
-                $"borrarDisco={borrarDatosGuardadosEnDisco}");
+                $"reiniciarInv={reiniciarInventarioEnMemoria}, " +
+                $"reiniciarChk={reiniciarCheckpointsEnMemoria}, " +
+                $"borrarDisco(inv/chk)={borrarDatosGuardadosEnDisco}/{borrarCheckpointsEnDisco}");
         }
     }
 
@@ -79,7 +102,8 @@ public class ConfiguracionPruebas : MonoBehaviour
     {
         ProgresoGlobal.ReiniciarTodo();
         InventarioConstrucciones.ReiniciarEnMemoria();
-        Debug.Log("[ConfiguracionPruebas] Recompensas e inventario reiniciados en memoria.");
+        CheckpointsFase.ReiniciarEnMemoria();
+        Debug.Log("[ConfiguracionPruebas] Recompensas, inventario y checkpoints reiniciados en memoria.");
     }
 
     [ContextMenu("Borrar inventario guardado en disco")]
@@ -89,17 +113,38 @@ public class ConfiguracionPruebas : MonoBehaviour
         Debug.Log("[ConfiguracionPruebas] PlayerPrefs del inventario borrado.");
     }
 
+    [ContextMenu("Borrar checkpoints guardados en disco (usuario actual)")]
+    private void BorrarCheckpointsDiscoAhora()
+    {
+        CheckpointsFase.LimpiarTodoDelUsuario();
+        Debug.Log("[ConfiguracionPruebas] PlayerPrefs de checkpoints borrado.");
+    }
+
     [ContextMenu("Apagar persistencia (inventario)")]
-    private void ApagarPersistencia()
+    private void ApagarPersistenciaInv()
     {
         InventarioConstrucciones.PersistenciaHabilitada = false;
         Debug.Log("[ConfiguracionPruebas] Persistencia del inventario: OFF.");
     }
 
     [ContextMenu("Encender persistencia (inventario)")]
-    private void EncenderPersistencia()
+    private void EncenderPersistenciaInv()
     {
         InventarioConstrucciones.PersistenciaHabilitada = true;
         Debug.Log("[ConfiguracionPruebas] Persistencia del inventario: ON.");
+    }
+
+    [ContextMenu("Apagar persistencia (checkpoints)")]
+    private void ApagarPersistenciaChk()
+    {
+        CheckpointsFase.PersistenciaHabilitada = false;
+        Debug.Log("[ConfiguracionPruebas] Persistencia de checkpoints: OFF.");
+    }
+
+    [ContextMenu("Encender persistencia (checkpoints)")]
+    private void EncenderPersistenciaChk()
+    {
+        CheckpointsFase.PersistenciaHabilitada = true;
+        Debug.Log("[ConfiguracionPruebas] Persistencia de checkpoints: ON.");
     }
 }
