@@ -61,7 +61,7 @@ public class PauseManager : MonoBehaviour
     public void ConfirmarIrAZonaLibre()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("ZonaJuego");
+        SceneManager.LoadScene("Construccion");
     }
 
     // --- LÓGICA DE CERRAR SESIÓN ---
