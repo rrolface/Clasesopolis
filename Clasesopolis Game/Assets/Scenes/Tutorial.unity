@@ -22027,9 +22027,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMixer: {fileID: 24100000, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  parametroMusica: musicVol
+  parametroVoces: voiceVol
+  parametroSFX: sfxVol
   sliderMusica: {fileID: 1059610982}
   sliderVoces: {fileID: 1222813608}
   sliderSFX: {fileID: 386075053}
+  autoConectarBotones: 1
+  botonMuteMusica: {fileID: 0}
+  botonMuteVoces: {fileID: 0}
+  botonMuteSFX: {fileID: 0}
+  iconoMuteMusica: {fileID: 0}
+  iconoMuteVoces: {fileID: 0}
+  iconoMuteSFX: {fileID: 0}
+  spriteMusicaActiva: {fileID: 0}
+  spriteMusicaMuteada: {fileID: 0}
+  spriteVocesActivas: {fileID: 0}
+  spriteVocesMuteadas: {fileID: 0}
+  spriteSFXActivos: {fileID: 0}
+  spriteSFXMuteados: {fileID: 0}
 --- !u!114 &1818361239
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -48,8 +48,12 @@ public class RetoOpcionMultiple : MonoBehaviour
         [Tooltip("El botón de la opción correcta. Al pulsarlo cuenta como acierto.")]
         public Button botonCorrecto;
 
-        [Tooltip("Los botones de las opciones incorrectas. Pulsar cualquiera cuenta como error.")]
-        public List<Button> botonesIncorrectos = new List<Button>();
+        [Header("Botones incorrectos (4 slots fijos)")]
+        [Tooltip("Botones de opciones incorrectas. Deja en None los slots que no necesites.")]
+        public Button botonIncorrecto1;
+        public Button botonIncorrecto2;
+        public Button botonIncorrecto3;
+        public Button botonIncorrecto4;
     }
 
     // ============================================================
@@ -126,27 +130,33 @@ public class RetoOpcionMultiple : MonoBehaviour
 
             if (p.botonCorrecto != null)
             {
-                p.botonCorrecto.onClick.RemoveAllListeners();
-                p.botonCorrecto.onClick.AddListener(() => Responder(true));
+                CablearBoton(p.botonCorrecto, true);
             }
             else
             {
                 Debug.LogWarning($"[RetoOpcionMultiple] La pregunta '{p.titulo}' no tiene botonCorrecto asignado.");
             }
 
-            if (p.botonesIncorrectos != null)
-            {
-                foreach (Button btn in p.botonesIncorrectos)
-                {
-                    if (btn == null) continue;
-                    btn.onClick.RemoveAllListeners();
-                    btn.onClick.AddListener(() => Responder(false));
-                }
-            }
+            // 4 slots fijos de incorrectos. Los que estén en null simplemente se ignoran.
+            CablearBoton(p.botonIncorrecto1, false);
+            CablearBoton(p.botonIncorrecto2, false);
+            CablearBoton(p.botonIncorrecto3, false);
+            CablearBoton(p.botonIncorrecto4, false);
         }
 
         ApagarTodosLosPaneles();
         MostrarPreguntaActual();
+    }
+
+    /// <summary>
+    /// Helper: limpia listeners runtime y agrega el de Responder.
+    /// Acepta null sin error.
+    /// </summary>
+    private void CablearBoton(Button btn, bool esCorrecto)
+    {
+        if (btn == null) return;
+        btn.onClick.RemoveAllListeners();
+        btn.onClick.AddListener(() => Responder(esCorrecto));
     }
 
     // ============================================================
@@ -216,14 +226,16 @@ public class RetoOpcionMultiple : MonoBehaviour
     // ============================================================
     //  FINAL DEL MINIJUEGO
     // ============================================================
-    private void MostrarFinal()
+
+    /// <summary>
+    /// Calcula puntajeTemporal según aciertos/total y el puntajeMaximo configurado.
+    /// Se separó de MostrarFinal para poder llamarlo defensivamente desde Continuar()
+    /// en caso de que el wiring del Inspector se haya saltado MostrarFinal.
+    /// </summary>
+    private void CalcularPuntajeFinal()
     {
-        retoTerminado = true;
-
         int total = preguntas != null ? preguntas.Count : 0;
-        int incorrectas = total - aciertos;
 
-        // Cálculo proporcional de puntos (mismo criterio que GestorClasificacion)
         if (total > 0)
         {
             float proporcion = (float)aciertos / total;
@@ -233,6 +245,19 @@ public class RetoOpcionMultiple : MonoBehaviour
         {
             puntajeTemporal = 0;
         }
+
+        Debug.Log($"[RetoOpcionMultiple] Cálculo final: aciertos={aciertos}, total={total}, " +
+                  $"puntajeMaximo={puntajeMaximo}, puntajeTemporal={puntajeTemporal}");
+    }
+
+    private void MostrarFinal()
+    {
+        retoTerminado = true;
+
+        CalcularPuntajeFinal();
+
+        int total = preguntas != null ? preguntas.Count : 0;
+        int incorrectas = total - aciertos;
 
         if (textoResultado != null)
             textoResultado.text = string.Format(formatoResultado, aciertos, total, incorrectas, puntajeTemporal);
@@ -258,6 +283,17 @@ public class RetoOpcionMultiple : MonoBehaviour
     /// <summary>Botón "Continuar" de los paneles finales.</summary>
     public void Continuar()
     {
+        // Defensivo: si por wiring se saltó MostrarFinal y nunca se calculó
+        // el puntaje, lo calculamos aquí antes de cerrar.
+        if (!retoTerminado)
+        {
+            Debug.LogWarning("[RetoOpcionMultiple] Continuar() se llamó antes de MostrarFinal. " +
+                             "Revisa que los botones Continuar de los paneles de feedback (Correcto/Incorrecto) " +
+                             "estén wireados a Avanzar() y NO a Continuar(). Calculando puntaje ahora.");
+            CalcularPuntajeFinal();
+            retoTerminado = true;
+        }
+
         FinalizarReto();
     }
 
