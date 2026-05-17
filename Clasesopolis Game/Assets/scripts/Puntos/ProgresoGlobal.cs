@@ -59,18 +59,16 @@ public static class ProgresoGlobal
 
     // -------------------- FASE COMPLETADA --------------------
     /// <summary>
-    /// Marca la fase como completada en FaseManager (persiste en PlayerPrefs).
+    /// Marca la fase como completada en PlayerPrefs (vía FaseManager estático).
+    /// Funciona desde CUALQUIER escena, no requiere que FaseManager esté
+    /// presente en la jerarquía actual.
     /// Ya NO toca la racha — la racha se incrementa por reto vía IncrementarRacha.
     /// </summary>
     public static void RegistrarFinDeFase(int numeroFase = 0)
     {
-        if (numeroFase > 0 && FaseManager.Instance != null)
+        if (numeroFase > 0)
         {
-            FaseManager.Instance.CompletarFase(numeroFase);
-        }
-        else if (numeroFase > 0)
-        {
-            Debug.LogWarning($"FaseManager no encontrado. Fase {numeroFase} no completada.");
+            FaseManager.MarcarCompletada(numeroFase);
         }
     }
 

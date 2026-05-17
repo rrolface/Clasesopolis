@@ -159,25 +159,26 @@ public static class CheckpointsFase
     // ============================================================
 
     /// <summary>
-    /// Borra TODO lo del usuario actual en memoria. Si la persistencia está activa,
-    /// también barre las claves PlayerPrefs asociadas (hasta 20 fases por seguridad).
+    /// Borra TODO lo del usuario actual: estado en memoria Y claves en PlayerPrefs.
+    /// Se ejecuta SIEMPRE en disco, sin importar el valor de PersistenciaHabilitada
+    /// — esto es una acción explícita del usuario y debe ser efectiva siempre.
+    /// (Antes esto se saltaba cuando la persistencia estaba apagada, dejando datos
+    /// viejos en PlayerPrefs que reaparecían al volver a activarla.)
     /// </summary>
     public static void LimpiarTodoDelUsuario()
     {
         checkpointsMem.Clear();
         completadasMem.Clear();
 
-        if (PersistenciaHabilitada)
+        // Limpieza forzada del disco, independiente del flag.
+        for (int n = 1; n <= 20; n++)
         {
-            for (int n = 1; n <= 20; n++)
-            {
-                PlayerPrefs.DeleteKey(KeyCheckpoint(n));
-                PlayerPrefs.DeleteKey(KeyCompletada(n));
-            }
-            PlayerPrefs.Save();
+            PlayerPrefs.DeleteKey(KeyCheckpoint(n));
+            PlayerPrefs.DeleteKey(KeyCompletada(n));
         }
+        PlayerPrefs.Save();
 
-        Debug.Log($"[CheckpointsFase] Limpieza total para {Usuario()}");
+        Debug.Log($"[CheckpointsFase] Limpieza total para {Usuario()} (memoria + disco).");
     }
 
     /// <summary>
