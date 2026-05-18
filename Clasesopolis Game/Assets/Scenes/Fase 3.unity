@@ -21846,6 +21846,702 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642238735}
   m_CullTransparentMesh: 1
+--- !u!1 &1646496950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1646496956}
+  - component: {fileID: 1646496955}
+  - component: {fileID: 1646496954}
+  - component: {fileID: 1646496953}
+  - component: {fileID: 1646496952}
+  - component: {fileID: 1646496951}
+  m_Layer: 0
+  m_Name: _MANAGER_Fase3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1646496951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646496950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d051f5cd8096ce14a88df6b235157f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMixer: {fileID: 24100000, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  parametroMusica: musicVol
+  parametroVoces: voiceVol
+  parametroSFX: sfxVol
+  sliderMusica: {fileID: 0}
+  sliderVoces: {fileID: 0}
+  sliderSFX: {fileID: 0}
+  autoConectarBotones: 0
+  botonMuteMusica: {fileID: 0}
+  botonMuteVoces: {fileID: 0}
+  botonMuteSFX: {fileID: 0}
+  iconoMuteMusica: {fileID: 0}
+  iconoMuteVoces: {fileID: 0}
+  iconoMuteSFX: {fileID: 0}
+  spriteMusicaActiva: {fileID: 21300000, guid: dc2c1300dea3c85409b4c910c985bdae, type: 3}
+  spriteMusicaMuteada: {fileID: 21300000, guid: 880e2c81711b8134a8f41097ba2e7e64, type: 3}
+  spriteVocesActivas: {fileID: 21300000, guid: bb6986eb4be1e394ca6f8d9499a7c942, type: 3}
+  spriteVocesMuteadas: {fileID: 21300000, guid: 61d91487d7c4123439eccf5390c829fc, type: 3}
+  spriteSFXActivos: {fileID: 21300000, guid: bb6986eb4be1e394ca6f8d9499a7c942, type: 3}
+  spriteSFXMuteados: {fileID: 21300000, guid: 61d91487d7c4123439eccf5390c829fc, type: 3}
+--- !u!114 &1646496952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646496950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e9440b2a3ce1a4ebe41ca88e7e114e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelPausa: {fileID: 0}
+  estaPausado: 0
+  audioSourceVoces: {fileID: 1646496953}
+  panelConfirmarZonaLibre: {fileID: 0}
+  panelConfirmarLogout: {fileID: 0}
+--- !u!82 &1646496953
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646496950}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1646496954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646496950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7d77cf9aacb1924f83b51f3464264f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoXP: {fileID: 0}
+--- !u!114 &1646496955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646496950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d67102fc5db6124c84211621e94977a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numeroFase: 1
+  usarCheckpointsAlIniciar: 1
+  botonContinuar: {fileID: 0}
+  parlanteVoces: {fileID: 0}
+  pasos:
+  - nombrePaso: Bienvenda
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar: []
+  - nombrePaso: Explicacion_1
+    mensajeTexto: "En esta fase, aprender\xE1s a reconocer una clase dentro del mundo
+      de la programaci\xF3n. \xA1Ser\xE1 tu primera misi\xF3n para empezar a dar
+      forma a Clases\xF3polis!"
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: JuegoSimple
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 1
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar: []
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Explicacion_2
+    mensajeTexto: "Una clase es un plano o molde que define c\xF3mo ser\xE1n los
+      objetos. Especifica las caracter\xEDsticas y comportamientos que esos objetos
+      tendr\xE1n cuando se creen."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Explicacion_3
+    mensajeTexto: Por lo que una clase puede ser una casa,  edificio,  museo, o biblioteca.
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Consejito
+    mensajeTexto: "Te doy un consejito para que pod\xE1s identificar una clase."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Preparado_para_reto
+    mensajeTexto: "Ahora que ya sab\xE9s el concepto de Clase \xBFest\xE1s listo
+      para empezar el reto?"
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Informacion_reto
+    mensajeTexto: "En el siguiente reto, se te presentar\xE1n diferentes elementos
+      de la ciudad. Algunos de ellos son planos de edificios, y otros no. Tu misi\xF3n
+      es identificar cu\xE1les representan clases y cu\xE1les no. Recuerda, una clase
+      es un plano, no una construcci\xF3n real."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: RetoArrastraItem
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 1
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: FinalizacionReto
+    mensajeTexto: Breve ya terminaste tu primer reto miremos tus puntos optenidos
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+  - nombrePaso: Puntuacion
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - nombrePaso: Racha
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Insignia
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Construccion
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Desicion
+    mensajeTexto: Vas super bien, ya casi acabas la fase 1, vamos que falta poco
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 1
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 1
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+  - nombrePaso: Explicacion_momento2
+    mensajeTexto: "Ahora aprender\xE1s sobre un concepto muy relacionado a las Clases
+      y son los Objetos o instancias."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Explicacion2_momento2
+    mensajeTexto: "A continuaci\xF3n, aprender\xE1s a reconocer un objeto dentro
+      del mundo de la programaci\xF3n. \xA1deber\xE1s reconocer la diferencia entre
+      clase y objeto para empezar a construir en Clases\xF3polis!"
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Explicacion3_momento2
+    mensajeTexto: "Un objeto es una entidad concreta que representa algo del mundo
+      real o una abstracci\xF3n dentro del programa. Es una instancia de una clase,
+      la cual es un molde o plantilla que define las caracter\xEDsticas y comportamientos
+      generales de ese tipo de entidad. Los objetos son fundamentales porque permiten
+      modelar entidades que interact\xFAan entre s\xED dentro de un sistema.\n\nUn
+      objeto no solo almacena datos (a trav\xE9s de atributos) y tiene comportamientos
+      (a trav\xE9s de m\xE9todos), sino que tambi\xE9n encapsula informaci\xF3n y
+      la hace accesible solo de manera controlada."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Explicacion4_momento2
+    mensajeTexto: "\nImagina que tenemos un edificio espec\xEDfico en la ciudad llamado
+      \"Edificio Central\", que est\xE1 en la Avenida Principal, tiene 10 pisos,
+      fue construido en 1998 y est\xE1 hecho de ladrillo."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Explicacion5_momento2
+    mensajeTexto: "Imagina que tenemos un edificio espec\xEDfico en la ciudad llamado
+      \"Edificio Central\", que est\xE1 en la Avenida Principal, tiene 10 pisos,
+      fue construido en 1998 y est\xE1 hecho de ladrillo."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Explicacion6_momento2
+    mensajeTexto: "Bueno ya sabes el concepto de Objeto \xBFest\xE1s listo para empezar
+      el reto?"
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Preparacion_reto_momento2
+    mensajeTexto: "Este reto consiste en identificar cu\xE1l de los elementos presentados
+      son clases (planos) y cu\xE1les son objetos (instancias concretas). Una clase
+      es un modelo general que describe c\xF3mo debe ser un edificio, mientras que
+      un objeto es una construcci\xF3n real basada en ese modelo."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: RetoArrastraItem_2
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 1
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: FinalizacionReto_momento2
+    mensajeTexto: "\xA1Bien ah\xED! Lo hiciste.\n\nMuy bien, haz finalizado tu reto
+      de la fase 2, ya reconoces e identificas el concepto de clases y objetos."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+  - nombrePaso: Puntuacion_2
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - nombrePaso: Racha_2
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Insignia_2
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Construccion
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+  - nombrePaso: Final
+    mensajeTexto: "\xA1Epaaa!, completaste la fase 1. Eres un experto en clases y
+      objetos.\n\n\xE1demas de que conseguiste muchas cosas.\n\nTe recuerdo que si
+      algo no te quedo claro, puedes volver a realizar esta fase."
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 1
+    escenaDestino: Construccion
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 0}
+    desactivarAlEntrar:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+--- !u!4 &1646496956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646496950}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 601.4576, y: 288.59747, z: 8.138077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1659217111
 GameObject:
   m_ObjectHideFlags: 0
@@ -28513,3 +29209,4 @@ SceneRoots:
   - {fileID: 1927355395}
   - {fileID: 1685503640}
   - {fileID: 1063746196}
+  - {fileID: 1646496956}
