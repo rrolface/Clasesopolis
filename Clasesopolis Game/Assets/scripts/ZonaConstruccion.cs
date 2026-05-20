@@ -19,6 +19,9 @@ public class ZonaConstruccion : MonoBehaviour
     public GameObject ZonaVisualPiso;
     public GameObject PanelFases;
 
+    [Header("XP")]
+    public int xpQueDa = 20;
+
     private bool jugadorDentro = false;
     private bool yaConstruido = false;
 
@@ -82,6 +85,7 @@ public class ZonaConstruccion : MonoBehaviour
         Quaternion rot = (puntoConstruccion != null) ? puntoConstruccion.rotation : transform.rotation;
 
         Instantiate(prefabAUsar, pos, rot);
+        CiudadXP.instancia.AgregarXP(xpQueDa);
         yaConstruido = true;
 
         // El inventario NO se reduce: la construcción sigue disponible para usarse en otras zonas.

@@ -48,6 +48,11 @@ public class ComprobarMultiple : MonoBehaviour
         SceneManager.LoadScene("Fase 3");
     }
 
+    public void FaseConstruccion()
+    {
+        SceneManager.LoadScene("Construccion");
+    }
+
     public void ResetearReto2()
     {
         // 🔹 devolver objetos
