@@ -35,6 +35,14 @@ public class FlujoFases : MonoBehaviour
         [Header("Acciones de Objetos")]
         public List<GameObject> activarAlEntrar;
         public List<GameObject> desactivarAlEntrar;
+
+        [Header("Animación de Cámara")]
+        public Animator animadorCamara;
+        public string triggerCamara;
+
+        [Header("Animación de Inspector Byte")]
+        public Animator animadorByte;
+        public string triggerByte;
     }
 
     [Header("Identificador de fase")]
@@ -144,6 +152,18 @@ public class FlujoFases : MonoBehaviour
         // 6. Activación / desactivación
         foreach (GameObject obj in pasoActual.activarAlEntrar) if (obj != null) obj.SetActive(true);
         foreach (GameObject obj in pasoActual.desactivarAlEntrar) if (obj != null) obj.SetActive(false);
+
+        // 6.5 Animación de cámara
+        if (pasoActual.animadorCamara != null && !string.IsNullOrEmpty(pasoActual.triggerCamara))
+            {
+          pasoActual.animadorCamara.SetTrigger(pasoActual.triggerCamara);
+                }
+
+        // 6.6 Animación de Inspector Byte
+                if (pasoActual.animadorByte != null && !string.IsNullOrEmpty(pasoActual.triggerByte))
+                {
+                pasoActual.animadorByte.SetTrigger(pasoActual.triggerByte);
+                }
 
         // 7. Texto y audio
         if (pasoActual.textoUI != null) pasoActual.textoUI.text = pasoActual.mensajeTexto;
