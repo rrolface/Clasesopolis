@@ -311,7 +311,7 @@ MonoBehaviour:
   pasos:
   - nombrePaso: Bienvenda
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: cbc642e57c5b7ae488cff0056a53bb51, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
     mensajeTexto: "En esta fase, aprender\xE1s a reconocer una clase dentro del mundo
       de la programaci\xF3n. \xA1Ser\xE1 tu primera misi\xF3n para empezar a dar
       forma a Clases\xF3polis!"
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 8f5ddec416fe75445b51e222aa1e0b1a, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1112594127}
     esRetoInteractivos: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: JuegoSimple
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 5a6f21e08bd96494bb32370799d4a234, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1112594127}
     esRetoInteractivos: 1
@@ -371,7 +371,7 @@ MonoBehaviour:
     mensajeTexto: "Una clase es un plano o molde que define c\xF3mo ser\xE1n los
       objetos. Especifica las caracter\xEDsticas y comportamientos que esos objetos
       tendr\xE1n cuando se creen."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 6ad355f08ac4fec4691ab34b67c9942a, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 374300640}
     esRetoInteractivos: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Explicacion_3
     mensajeTexto: Por lo que una clase puede ser una casa,  edificio,  museo, o biblioteca.
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: d83fcca05c843094fa245267ea3d4cb6, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 2038211433}
     esRetoInteractivos: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Consejito
     mensajeTexto: "Te doy un consejito para que pod\xE1s identificar una clase."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 092da0aa570bc784fbdcaa32db06daae, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1038610261}
     esRetoInteractivos: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
   - nombrePaso: Preparado_para_reto
     mensajeTexto: "Ahora que ya sab\xE9s el concepto de Clase \xBFest\xE1s listo
       para empezar el reto?"
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 15049d234b9c59742938946a91b5a2db, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 815482769}
     esRetoInteractivos: 0
@@ -451,7 +451,7 @@ MonoBehaviour:
       de la ciudad. Algunos de ellos son planos de edificios, y otros no. Tu misi\xF3n
       es identificar cu\xE1les representan clases y cu\xE1les no. Recuerda, una clase
       es un plano, no una construcci\xF3n real."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 1796af0872e0cc74992aa2740d07339f, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1935174767}
     esRetoInteractivos: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: RetoArrastraItem
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 6e65fd87da2fa8442aae19d8520eeac9, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 1
@@ -490,7 +490,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: FinalizacionReto
     mensajeTexto: Breve ya terminaste tu primer reto miremos tus puntos optenidos
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 521aad0c8be81174781396aea637e0da, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 273907260}
     esRetoInteractivos: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Puntuacion
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 398bdeaf7e2c14749b47fcf3e23dc620, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Racha
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 34f64b08bca059342b4b9254916754b2, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -552,7 +552,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Insignia
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 5efd26f987966b945832c80fafa733dc, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Construccion
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 4b5f0a3fb7e6ba142bb3c91e6562a150, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -593,7 +593,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Desicion
     mensajeTexto: Vas super bien, ya casi acabas la fase 1, vamos que falta poco
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 5e346a3d78c870f44a0840e615e399bc, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1516148567}
     esRetoInteractivos: 1
@@ -614,7 +614,7 @@ MonoBehaviour:
   - nombrePaso: Explicacion_momento2
     mensajeTexto: "Ahora aprender\xE1s sobre un concepto muy relacionado a las Clases
       y son los Objetos o instancias."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: afb6363f5f2187d47a103a0cf775ee5d, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 705920211}
     esRetoInteractivos: 0
@@ -635,7 +635,7 @@ MonoBehaviour:
     mensajeTexto: "A continuaci\xF3n, aprender\xE1s a reconocer un objeto dentro
       del mundo de la programaci\xF3n. \xA1deber\xE1s reconocer la diferencia entre
       clase y objeto para empezar a construir en Clases\xF3polis!"
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: af1a6a7bcb2334c42bf7dae10162e384, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1893856897}
     esRetoInteractivos: 0
@@ -661,7 +661,7 @@ MonoBehaviour:
       objeto no solo almacena datos (a trav\xE9s de atributos) y tiene comportamientos
       (a trav\xE9s de m\xE9todos), sino que tambi\xE9n encapsula informaci\xF3n y
       la hace accesible solo de manera controlada."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 50f9456798dda4549965784e9ea341ea, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 274575530}
     esRetoInteractivos: 0
@@ -678,13 +678,18 @@ MonoBehaviour:
     triggerCamara: 
     animadorByte: {fileID: 0}
     triggerByte: 
-  - nombrePaso: Explicacion4_momento2
-    mensajeTexto: "\nImagina que tenemos un edificio espec\xEDfico en la ciudad llamado
-      \"Edificio Central\", que est\xE1 en la Avenida Principal, tiene 10 pisos,
-      fue construido en 1998 y est\xE1 hecho de ladrillo."
-    audioPaso: {fileID: 0}
+  - nombrePaso: Explicacion3_2_momento2
+    mensajeTexto: "Un objeto es una entidad concreta que representa algo del mundo
+      real o una abstracci\xF3n dentro del programa. Es una instancia de una clase,
+      la cual es un molde o plantilla que define las caracter\xEDsticas y comportamientos
+      generales de ese tipo de entidad. Los objetos son fundamentales porque permiten
+      modelar entidades que interact\xFAan entre s\xED dentro de un sistema.\n\nUn
+      objeto no solo almacena datos (a trav\xE9s de atributos) y tiene comportamientos
+      (a trav\xE9s de m\xE9todos), sino que tambi\xE9n encapsula informaci\xF3n y
+      la hace accesible solo de manera controlada."
+    audioPaso: {fileID: 8300000, guid: 956ef84c8a9fe414a9895637f7ccc23a, type: 3}
     panelPrincipal: {fileID: 752424388}
-    textoUI: {fileID: 787883085}
+    textoUI: {fileID: 274575530}
     esRetoInteractivos: 0
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
@@ -692,9 +697,35 @@ MonoBehaviour:
     numeroFase: 1
     esCheckpoint: 0
     activarAlEntrar:
-    - {fileID: 253102461}
-    desactivarAlEntrar:
     - {fileID: 2143503826}
+    desactivarAlEntrar:
+    - {fileID: 679995235}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
+  - nombrePaso: Explicacion3_3_momento2
+    mensajeTexto: "Un objeto es una entidad concreta que representa algo del mundo
+      real o una abstracci\xF3n dentro del programa. Es una instancia de una clase,
+      la cual es un molde o plantilla que define las caracter\xEDsticas y comportamientos
+      generales de ese tipo de entidad. Los objetos son fundamentales porque permiten
+      modelar entidades que interact\xFAan entre s\xED dentro de un sistema.\n\nUn
+      objeto no solo almacena datos (a trav\xE9s de atributos) y tiene comportamientos
+      (a trav\xE9s de m\xE9todos), sino que tambi\xE9n encapsula informaci\xF3n y
+      la hace accesible solo de manera controlada."
+    audioPaso: {fileID: 8300000, guid: 632c191413db781408a7bbe870f96563, type: 3}
+    panelPrincipal: {fileID: 752424388}
+    textoUI: {fileID: 274575530}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 1
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 2143503826}
+    desactivarAlEntrar:
+    - {fileID: 679995235}
     animadorCamara: {fileID: 0}
     triggerCamara: 
     animadorByte: {fileID: 0}
@@ -703,7 +734,7 @@ MonoBehaviour:
     mensajeTexto: "Imagina que tenemos un edificio espec\xEDfico en la ciudad llamado
       \"Edificio Central\", que est\xE1 en la Avenida Principal, tiene 10 pisos,
       fue construido en 1998 y est\xE1 hecho de ladrillo."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 19e701cca649b6d4b8a69819c5ec8b2a, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 683947942}
     esRetoInteractivos: 0
@@ -723,7 +754,7 @@ MonoBehaviour:
   - nombrePaso: Explicacion6_momento2
     mensajeTexto: "Bueno ya sabes el concepto de Objeto \xBFest\xE1s listo para empezar
       el reto?"
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: fb0a1d4a1cc1b0c48b6935e32fe650e3, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1200847712}
     esRetoInteractivos: 0
@@ -745,7 +776,7 @@ MonoBehaviour:
       son clases (planos) y cu\xE1les son objetos (instancias concretas). Una clase
       es un modelo general que describe c\xF3mo debe ser un edificio, mientras que
       un objeto es una construcci\xF3n real basada en ese modelo."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 575de7913967c9741851fc3e9834958a, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1200847712}
     esRetoInteractivos: 0
@@ -764,7 +795,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: RetoArrastraItem_2
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 0296ec68b10650c428255f68f88a7c00, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 1
@@ -785,7 +816,7 @@ MonoBehaviour:
   - nombrePaso: FinalizacionReto_momento2
     mensajeTexto: "\xA1Bien ah\xED! Lo hiciste.\n\nMuy bien, haz finalizado tu reto
       de la fase 2, ya reconoces e identificas el concepto de clases y objetos."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: fdbee81c873811645bd5de25df3b9038, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 658496148}
     esRetoInteractivos: 0
@@ -805,7 +836,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Puntuacion_2
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 398bdeaf7e2c14749b47fcf3e23dc620, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -828,7 +859,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Racha_2
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: d3e17c3a8d6ee1c4cb6a8d8f4f33e882, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -848,7 +879,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Insignia_2
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 06b4be30114f2a64aadcd296436d6040, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -868,7 +899,7 @@ MonoBehaviour:
     triggerByte: 
   - nombrePaso: Construccion
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: e755f13cb5b602244b8834e88554b904, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -891,7 +922,7 @@ MonoBehaviour:
     mensajeTexto: "\xA1Epaaa!, completaste la fase 1. Eres un experto en clases y
       objetos.\n\n\xE1demas de que conseguiste muchas cosas.\n\nTe recuerdo que si
       algo no te quedo claro, puedes volver a realizar esta fase."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: e92be535c2617fe4788509ca06491c5c, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 369696384}
     esRetoInteractivos: 0
@@ -2445,7 +2476,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 67b3292c83ee84140a8b9fde2cb6cb33, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -8646,7 +8677,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3edd859aa2de9c04e8a2426f98759126, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -12971,6 +13002,7 @@ GameObject:
   - component: {fileID: 595091007}
   - component: {fileID: 595091009}
   - component: {fileID: 595091008}
+  - component: {fileID: 595091010}
   m_Layer: 5
   m_Name: PanelFalla
   m_TagString: Untagged
@@ -13039,6 +13071,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595091006}
   m_CullTransparentMesh: 1
+--- !u!82 &595091010
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595091006}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: e2b29434073b9fb42bc156a1618dc88b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &605494588
 GameObject:
   m_ObjectHideFlags: 0
@@ -13303,7 +13432,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 602d10f6e1c5eb14da439f17aaa55e37, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -15877,6 +16006,7 @@ GameObject:
   - component: {fileID: 742760799}
   - component: {fileID: 742760798}
   - component: {fileID: 742760797}
+  - component: {fileID: 742760800}
   m_Layer: 5
   m_Name: PanelExito_2
   m_TagString: Untagged
@@ -15943,6 +16073,103 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -14}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &742760800
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742760796}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: d0a936c9eacbdf64e807de065d4a0d27, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &746925573
 GameObject:
   m_ObjectHideFlags: 0
@@ -18829,7 +19056,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: de4ffa52fd3962a4a984f9448340409b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -19122,7 +19349,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c0b46f1b620869b41b412e35ba21ed1d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3576d25062ef1c94bb89e6163098d15b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -21325,6 +21552,7 @@ GameObject:
   - component: {fileID: 960423454}
   - component: {fileID: 960423456}
   - component: {fileID: 960423455}
+  - component: {fileID: 960423457}
   m_Layer: 5
   m_Name: PanelExito
   m_TagString: Untagged
@@ -21391,6 +21619,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960423453}
   m_CullTransparentMesh: 1
+--- !u!82 &960423457
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960423453}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: d0a936c9eacbdf64e807de065d4a0d27, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &979486697
 GameObject:
   m_ObjectHideFlags: 0
@@ -25324,6 +25649,7 @@ GameObject:
   - component: {fileID: 1101155646}
   - component: {fileID: 1101155645}
   - component: {fileID: 1101155644}
+  - component: {fileID: 1101155647}
   m_Layer: 5
   m_Name: Opcion_trabajadores
   m_TagString: Untagged
@@ -25446,6 +25772,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101155642}
   m_CullTransparentMesh: 1
+--- !u!82 &1101155647
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101155642}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 1a2bc613115612f4497cd134c2104f51, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1105164676
 GameObject:
   m_ObjectHideFlags: 0
@@ -27383,6 +27806,7 @@ GameObject:
   - component: {fileID: 1193550611}
   - component: {fileID: 1193550613}
   - component: {fileID: 1193550612}
+  - component: {fileID: 1193550614}
   m_Layer: 5
   m_Name: PanelFalla_2
   m_TagString: Untagged
@@ -27451,6 +27875,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193550610}
   m_CullTransparentMesh: 1
+--- !u!82 &1193550614
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193550610}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 397ef2675a18460498538490c78be445, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1195002153
 GameObject:
   m_ObjectHideFlags: 0
@@ -28900,6 +29421,7 @@ GameObject:
   - component: {fileID: 1238635976}
   - component: {fileID: 1238635975}
   - component: {fileID: 1238635974}
+  - component: {fileID: 1238635977}
   m_Layer: 5
   m_Name: Opcion_materiales
   m_TagString: Untagged
@@ -29021,6 +29543,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238635972}
   m_CullTransparentMesh: 1
+--- !u!82 &1238635977
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238635972}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3e22ed7bee17f304caaf1c0752c4c2d4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1239940687
 GameObject:
   m_ObjectHideFlags: 0
@@ -33862,7 +34481,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 69e57bc35a8777841b2964197b06c741, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -36807,7 +37426,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1c6f77c9772b1684a962c3175ea126b8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -38583,7 +39202,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 496dbaad8700c3349bb810d22e6a0a07, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -39897,7 +40516,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 38aab0bb1bb039b418a3c56b3477e03c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -41783,7 +42402,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 79f4799f373b7ed45b8ba3d267a44cb9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -41937,7 +42556,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c0b46f1b620869b41b412e35ba21ed1d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3576d25062ef1c94bb89e6163098d15b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -44232,7 +44851,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 83f233fce1c8fcc4fb0690f24659913c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -46023,7 +46642,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 53bda1f33e7b6ae4b8a60f74db680f1e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -46622,7 +47241,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3edd859aa2de9c04e8a2426f98759126, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -47596,6 +48215,7 @@ GameObject:
   - component: {fileID: 2054331456}
   - component: {fileID: 2054331455}
   - component: {fileID: 2054331454}
+  - component: {fileID: 2054331457}
   m_Layer: 5
   m_Name: Opcion_Planos
   m_TagString: Untagged
@@ -47717,6 +48337,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054331452}
   m_CullTransparentMesh: 1
+--- !u!82 &2054331457
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054331452}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 710b715b0c584764ca8e6c143e401736, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2064535798
 GameObject:
   m_ObjectHideFlags: 0

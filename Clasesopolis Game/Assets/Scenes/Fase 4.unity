@@ -387,7 +387,7 @@ MonoBehaviour:
   pasos:
   - nombrePaso: Bienvenda
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: dab8e1bcbf658c94484b36ad3be6d956, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -399,9 +399,13 @@ MonoBehaviour:
     activarAlEntrar:
     - {fileID: 1800316452}
     desactivarAlEntrar: []
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion_1
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 75118e78cf7a22f4494a9ab41edf73a5, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -414,12 +418,16 @@ MonoBehaviour:
     - {fileID: 2119607180}
     desactivarAlEntrar:
     - {fileID: 1800316452}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion_2
     mensajeTexto: "\"Quiz\xE1s te est\xE1s preguntando, \xBFc\xF3mo se relacionan
       los objetos aqu\xED en la ciudad digital? D\xE9jame mostrarte c\xF3mo algunos
       elementos como los drones pueden estar conectados. \xA1P\xE1rchate que te lo
       explico f\xE1cil!\""
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: e869e006ecfab144ca07f222403f905d, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 864329051}
     esRetoInteractivos: 0
@@ -432,10 +440,14 @@ MonoBehaviour:
     - {fileID: 1399778849}
     desactivarAlEntrar:
     - {fileID: 2119607180}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion_3_1
     mensajeTexto: "\xBFQu\xE9 es una asociaci\xF3n? Versi\xF3n simple: \"Es una relaci\xF3n
       entre dos objetos. Significa que uno conoce, usa o se conecta con el otro.\""
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 5e28f2c332f672b4abd59a66ec46d5f6, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 374300640}
     esRetoInteractivos: 0
@@ -448,11 +460,15 @@ MonoBehaviour:
     - {fileID: 409022795}
     desactivarAlEntrar:
     - {fileID: 1399778849}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion_3_2
     mensajeTexto: "Veni pillemos este ejemplo de un dron\n\nDron \u2194 Control remoto.
       El dron \"necesita\" un control para volar; existe una asociaci\xF3n entre
       ellos."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 348a71a8949d06847b3a4d7475713b1e, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 2038211433}
     esRetoInteractivos: 0
@@ -465,10 +481,14 @@ MonoBehaviour:
     - {fileID: 1467353010}
     desactivarAlEntrar:
     - {fileID: 409022795}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion_4
     mensajeTexto: "\xBFViste que es facil? , ahora miremos otro ejemplo, para que
       veas que se puede aplicar a varias cosas."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: f68e6bd1bfc08ec4eb03274d19792279, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1038610261}
     esRetoInteractivos: 0
@@ -481,11 +501,15 @@ MonoBehaviour:
     - {fileID: 2070103598}
     desactivarAlEntrar:
     - {fileID: 1467353010}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion_5
     mensajeTexto: "Miremos este otro ejemplo de la ciudad. \n\nCliente \u2194 Pedido.
       Un cliente \"hace\" un pedido; existe una asociaci\xF3n/conexi\xF3n entre Cliente
       y Pedido."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 95abbbe95420cce4f8784b9eedfcaaaa, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 255891710}
     esRetoInteractivos: 0
@@ -498,11 +522,15 @@ MonoBehaviour:
     - {fileID: 1760802392}
     desactivarAlEntrar:
     - {fileID: 2070103598}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Tip para identificar
     mensajeTexto: "Te doy un peque\xF1o truco para identificar. \n\nSi dos objetos
       interact\xFAan, se necesitan, se contienen o se usan, hay una asociaci\xF3n
       entre ellos."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 2910ef5330ab0d548997ccc8d0b1e342, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 221283658}
     esRetoInteractivos: 0
@@ -515,10 +543,14 @@ MonoBehaviour:
     - {fileID: 2146055907}
     desactivarAlEntrar:
     - {fileID: 1760802392}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Preparacion_reto
     mensajeTexto: Bueno ya sos todo un experto en identificar estas asociaciones
       y relaciones, preparate que vamos a poner aprueba estos conocimientos.
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 4b52b7b4b776bc640a7e918bdf9d64b4, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 651949967}
     esRetoInteractivos: 0
@@ -531,12 +563,16 @@ MonoBehaviour:
     - {fileID: 678760384}
     desactivarAlEntrar:
     - {fileID: 2146055907}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Informacion_reto
     mensajeTexto: "En el siguiente reto, se te presentar\xE1n diferentes elementos
       a superar, pero tranquilo seran faciles, ya que solamente deberas escoger 
       la opci\xF3n que consideres correcta, no te preocupes, que me puedes preguntar
       algo si lo necesitas."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 7683ebf1238f04449be05325d5b43d7d, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1935174767}
     esRetoInteractivos: 0
@@ -549,9 +585,13 @@ MonoBehaviour:
     - {fileID: 1810977273}
     desactivarAlEntrar:
     - {fileID: 678760384}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: RetoArrastraItem
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 5f9c67455dcf20b43b0c95a434469cd3, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 1
@@ -565,9 +605,13 @@ MonoBehaviour:
     - {fileID: 444412405}
     desactivarAlEntrar:
     - {fileID: 1810977273}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: FinalizacionReto
     mensajeTexto: Breve ya terminaste tu primer reto miremos tus puntos optenidos
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 2be675242a2c73e41b40d2ebfe61c2e9, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 273907260}
     esRetoInteractivos: 0
@@ -581,9 +625,13 @@ MonoBehaviour:
     desactivarAlEntrar:
     - {fileID: 1206714655}
     - {fileID: 444412405}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Puntuacion
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 398bdeaf7e2c14749b47fcf3e23dc620, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -599,9 +647,13 @@ MonoBehaviour:
     - {fileID: 548772112}
     - {fileID: 699123267}
     - {fileID: 1696605715}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Racha
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: d3e17c3a8d6ee1c4cb6a8d8f4f33e882, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -615,9 +667,13 @@ MonoBehaviour:
     - {fileID: 699123267}
     desactivarAlEntrar:
     - {fileID: 1105164676}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Insignia
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: f4d3d0cafcf5d3d45a3873170891d73d, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -631,9 +687,13 @@ MonoBehaviour:
     - {fileID: 1696605715}
     desactivarAlEntrar:
     - {fileID: 699123267}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Construccion
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: e755f13cb5b602244b8834e88554b904, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -648,9 +708,13 @@ MonoBehaviour:
     - {fileID: 1953019492}
     desactivarAlEntrar:
     - {fileID: 1696605715}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Desicion
-    mensajeTexto: Vas super bien, ya casi acabas la fase 1, vamos que falta poco
-    audioPaso: {fileID: 0}
+    mensajeTexto: No hay nada como un descansito
+    audioPaso: {fileID: 8300000, guid: ce40f1e971cc233438a5cf8d44763ebc, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1516148567}
     esRetoInteractivos: 1
@@ -664,10 +728,14 @@ MonoBehaviour:
     desactivarAlEntrar:
     - {fileID: 1555536681}
     - {fileID: 1696605715}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion_momento2
     mensajeTexto: "Ahora aprender\xE1s sobre un concepto muy relacionado a las Clases
       y son los Objetos o instancias."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 866722194abd21a4a84b18524d0cbd46, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 705920211}
     esRetoInteractivos: 0
@@ -680,13 +748,16 @@ MonoBehaviour:
     - {fileID: 152183536}
     desactivarAlEntrar:
     - {fileID: 590119095}
-  - nombrePaso: Explicacion2_momento2
-    mensajeTexto: "Cuando dos objetos est\xE1n asociados, tambi\xE9n nos preguntamos
-      cu\xE1ntos de cada uno se relacionan. Eso se llama cardinalidad Y hay varios
-      tipos, veamoslos."
-    audioPaso: {fileID: 0}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
+  - nombrePaso: Explicacion2.0_momento2
+    mensajeTexto: "Ahora aprender\xE1s sobre un concepto muy relacionado a las Clases
+      y son los Objetos o instancias."
+    audioPaso: {fileID: 8300000, guid: 560bf5cc1c6b2ff47a43cc1e17d21709, type: 3}
     panelPrincipal: {fileID: 752424388}
-    textoUI: {fileID: 0}
+    textoUI: {fileID: 705920211}
     esRetoInteractivos: 0
     objetoDelReto: {fileID: 0}
     esPasoFinal: 0
@@ -694,13 +765,17 @@ MonoBehaviour:
     numeroFase: 1
     esCheckpoint: 0
     activarAlEntrar:
-    - {fileID: 1525234878}
-    desactivarAlEntrar:
     - {fileID: 152183536}
+    desactivarAlEntrar:
+    - {fileID: 590119095}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion3_momento2
     mensajeTexto: "1:1 \u2014 uno a uno. \n\nPillemos otra vez el dron: un dron tiene
       un solo n\xFAmero de serie, ese n\xFAmero pertenece a un solo dron."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 63133f75eb552674ba7fd6f19dc4567d, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 274575530}
     esRetoInteractivos: 0
@@ -713,10 +788,14 @@ MonoBehaviour:
     - {fileID: 2143503826}
     desactivarAlEntrar:
     - {fileID: 1525234878}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion4_momento2
     mensajeTexto: "O tambien podriamos verlo en la ciudad: un edificio tiene una
       sola direcci\xF3n.\n"
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 3c94fba950c460c4f9c4ce961fc02bb5, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 787883085}
     esRetoInteractivos: 0
@@ -729,11 +808,15 @@ MonoBehaviour:
     - {fileID: 253102461}
     desactivarAlEntrar:
     - {fileID: 2143503826}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion5_momento2
     mensajeTexto: "\xBFSi lo ves? el 1:1 es cuando solo 1 objeto se relaciona solo
       1 vez con otro. ya que como los ejemplos que vimos un Dron no puede tener 2
       n\xFAmero de serie o un edificio no podria tener 2 direcciones."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: fce18014d9bdc9b4f8fcf403d2ad86b2, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 683947942}
     esRetoInteractivos: 0
@@ -746,10 +829,14 @@ MonoBehaviour:
     - {fileID: 999313681}
     desactivarAlEntrar:
     - {fileID: 253102461}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion6_momento2
     mensajeTexto: "1:N \u2014 uno a muchos. \n\nPillemos el ejemplo: un piloto controla
       muchos drones, pero cada dron tiene un solo piloto en ese momento. "
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: e1755c42b427c5d4f8849efebb8dc2dc, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1200847712}
     esRetoInteractivos: 0
@@ -762,10 +849,14 @@ MonoBehaviour:
     - {fileID: 2072150639}
     desactivarAlEntrar:
     - {fileID: 999313681}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion7_momento2
     mensajeTexto: "Veamoslo desde nuestra ciudad: un hotel tiene muchos hu\xE9spedes,
       pero cada hu\xE9sped est\xE1 en un solo hotel."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: c5e2f641783632f4180fa44d8d3706d2, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1803602483}
     esRetoInteractivos: 0
@@ -778,12 +869,16 @@ MonoBehaviour:
     - {fileID: 1276219920}
     desactivarAlEntrar:
     - {fileID: 2072150639}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion8_momento2
     mensajeTexto: "\xBFLe agarraste el tiro? basicamente una relaci\xF3n de 1:n,
       es cuando 1 sola clase, se relacione puede relacionar muchas veces con otra.\n\nComo
       vimos 1 Solo pilota maneja muchos Drones o 1 Sola clase Hotel tiene muchos
       \"Huespedes\""
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 79fd3cd7cff26f9469e2a5c856fff635, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1432824453}
     esRetoInteractivos: 0
@@ -796,11 +891,15 @@ MonoBehaviour:
     - {fileID: 123718507}
     desactivarAlEntrar:
     - {fileID: 1276219920}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion9_momento2
     mensajeTexto: "N:N \u2014 muchos a muchos. Veamos que casos encontramos\n\nEjemplo
       dron: muchos drones pueden hacer entregas a muchos clientes (cada cliente recibe
       de varios drones distintos, y cada dron entrega a varios clientes). "
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: e73247b1ab470af4394f6e8b16cd3b5c, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1553952852}
     esRetoInteractivos: 0
@@ -813,10 +912,14 @@ MonoBehaviour:
     - {fileID: 1918749050}
     desactivarAlEntrar:
     - {fileID: 123718507}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion10_momento2
     mensajeTexto: Otro ejemplo que seria perfecto en nuestro caso es cuando muchos
       estudiantes toman muchos cursos.
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 409d2c1312543d148991785012dea859, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 596774482}
     esRetoInteractivos: 0
@@ -829,12 +932,16 @@ MonoBehaviour:
     - {fileID: 1875645301}
     desactivarAlEntrar:
     - {fileID: 1918749050}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Explicacion11_momento2
     mensajeTexto: "Listo eso es todo sobre la relacion N:N, basicamentes es cuando
       una clase se puede relacionar muchas veces con otra. Como vimos N estudiantes,
       toman N cursos.\n\nTen en cuenta esta cardinalidad que la trabajaremos nuevamente
       m\xE1s adelante.\n\n"
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: b23c55ab7215deb4c993bf7d998e164c, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1200625833}
     esRetoInteractivos: 0
@@ -847,10 +954,14 @@ MonoBehaviour:
     - {fileID: 1686140743}
     desactivarAlEntrar:
     - {fileID: 1875645301}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Tip_carnidalidad
     mensajeTexto: "Tip para identificar la cardinalidad. Preg\xFAntate: \"\xBFuno
       solo, o varios?\" en cada lado de la relaci\xF3n."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: f14c996c9f5c04a4fb1698751c77d1fa, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 453942889}
     esRetoInteractivos: 0
@@ -863,11 +974,15 @@ MonoBehaviour:
     - {fileID: 671241830}
     desactivarAlEntrar:
     - {fileID: 1686140743}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Preparacion_reto_momento2
     mensajeTexto: "\xA1Listo!, ya estas hecho con las cardinalidades, ahora preparate
       que vamos a poner aprueba estos nuevos conocimientos.\n\nComo siempre, parchate
       que es breve y cualquier cosa me preguntas."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 7e450164a82574140bfdea1036821725, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 713964974}
     esRetoInteractivos: 0
@@ -880,11 +995,15 @@ MonoBehaviour:
     - {fileID: 1077323920}
     desactivarAlEntrar:
     - {fileID: 671241830}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Informaciom_reto
     mensajeTexto: "En el siguiente reto, se te presentar\xE1n diferentes elementos
       a superar, pero tranquilo seran faciles, ya que solamente deberas escoger 
       la opci\xF3n que consideres correcta."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 6012e9ab1eec03f4cbd5166a14c155ae, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 1038610261}
     esRetoInteractivos: 0
@@ -897,9 +1016,13 @@ MonoBehaviour:
     - {fileID: 735733328}
     desactivarAlEntrar:
     - {fileID: 1077323920}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: RetoArrastraItem_2
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: e9f55be5154c0b647812ca407036b950, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 1
@@ -913,10 +1036,14 @@ MonoBehaviour:
     - {fileID: 67255685}
     desactivarAlEntrar:
     - {fileID: 735733328}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: FinalizacionReto_momento2
     mensajeTexto: "\xA1Bien ah\xED! Lo hiciste.\n\nMuy bien, haz finalizado tu reto
       de la fase 2, ya reconoces e identificas el concepto de clases y objetos."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: af76b0642b8784a42b3440172a4ace6c, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 658496148}
     esRetoInteractivos: 0
@@ -930,9 +1057,13 @@ MonoBehaviour:
     desactivarAlEntrar:
     - {fileID: 741198687}
     - {fileID: 67255685}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Puntuacion_2
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 398bdeaf7e2c14749b47fcf3e23dc620, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -949,9 +1080,13 @@ MonoBehaviour:
     - {fileID: 303183832}
     - {fileID: 805290240}
     - {fileID: 1784626148}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Racha_2
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: d3e17c3a8d6ee1c4cb6a8d8f4f33e882, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -965,9 +1100,13 @@ MonoBehaviour:
     - {fileID: 303183832}
     desactivarAlEntrar:
     - {fileID: 1143712716}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Insignia_2
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: 9484893788888ae47afc9503fee18461, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -981,9 +1120,13 @@ MonoBehaviour:
     - {fileID: 805290240}
     desactivarAlEntrar:
     - {fileID: 303183832}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Construccion
     mensajeTexto: 
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: e755f13cb5b602244b8834e88554b904, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 0}
     esRetoInteractivos: 0
@@ -998,11 +1141,15 @@ MonoBehaviour:
     - {fileID: 1784626148}
     desactivarAlEntrar:
     - {fileID: 805290240}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
   - nombrePaso: Final
     mensajeTexto: "\xA1Epaaa!, completaste la fase 1. Eres un experto en clases y
       objetos.\n\n\xE1demas de que conseguiste muchas cosas.\n\nTe recuerdo que si
       algo no te quedo claro, puedes volver a realizar esta fase."
-    audioPaso: {fileID: 0}
+    audioPaso: {fileID: 8300000, guid: a542382d661940b48bb46986570f4a27, type: 3}
     panelPrincipal: {fileID: 752424388}
     textoUI: {fileID: 369696384}
     esRetoInteractivos: 0
@@ -1017,6 +1164,10 @@ MonoBehaviour:
     - {fileID: 911292428}
     - {fileID: 1784626148}
     - {fileID: 1362100202}
+    animadorCamara: {fileID: 0}
+    triggerCamara: 
+    animadorByte: {fileID: 0}
+    triggerByte: 
 --- !u!114 &6822669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2847,7 +2998,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: fb0463f15ef04684b9f313646024e8f4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2970,6 +3121,143 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68035748}
+  m_CullTransparentMesh: 1
+--- !u!1 &77141348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77141349}
+  - component: {fileID: 77141351}
+  - component: {fileID: 77141350}
+  m_Layer: 5
+  m_Name: Text (TMP) (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &77141349
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77141348}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1734631882}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -5.6445, y: 15}
+  m_SizeDelta: {x: 781.98, y: 157.8133}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &77141350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77141348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 32.6
+  m_fontSizeBase: 32.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &77141351
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77141348}
   m_CullTransparentMesh: 1
 --- !u!1 &77379567
 GameObject:
@@ -7449,6 +7737,7 @@ GameObject:
   - component: {fileID: 263079161}
   - component: {fileID: 263079160}
   - component: {fileID: 263079159}
+  - component: {fileID: 263079162}
   m_Layer: 5
   m_Name: PanelCorrecto
   m_TagString: Untagged
@@ -7463,7 +7752,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263079158}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7515,6 +7804,103 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -20}
   m_SizeDelta: {x: 0, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &263079162
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263079158}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: d0a936c9eacbdf64e807de065d4a0d27, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &264606724
 GameObject:
   m_ObjectHideFlags: 0
@@ -11305,7 +11691,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: edae5a028734c1c40b0edfbc342e7a40, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -16350,6 +16736,7 @@ GameObject:
   - component: {fileID: 595091007}
   - component: {fileID: 595091009}
   - component: {fileID: 595091008}
+  - component: {fileID: 595091010}
   m_Layer: 5
   m_Name: PanelFalla
   m_TagString: Untagged
@@ -16418,6 +16805,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595091006}
   m_CullTransparentMesh: 1
+--- !u!82 &595091010
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595091006}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 397ef2675a18460498538490c78be445, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &596774480
 GameObject:
   m_ObjectHideFlags: 0
@@ -16952,7 +17436,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: c39b250589906334ebfe3b81207d0b10, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -20960,6 +21444,7 @@ RectTransform:
   - {fileID: 1555536682}
   - {fileID: 590119096}
   - {fileID: 152183537}
+  - {fileID: 1312221841}
   - {fileID: 1525234879}
   - {fileID: 2143503827}
   - {fileID: 253102462}
@@ -24720,7 +25205,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7f157f34f1659a64dbb98645f64f9417, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -25014,7 +25499,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c0b46f1b620869b41b412e35ba21ed1d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3576d25062ef1c94bb89e6163098d15b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -27386,6 +27871,7 @@ GameObject:
   - component: {fileID: 960423454}
   - component: {fileID: 960423456}
   - component: {fileID: 960423455}
+  - component: {fileID: 960423457}
   m_Layer: 5
   m_Name: PanelExito
   m_TagString: Untagged
@@ -27452,6 +27938,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960423453}
   m_CullTransparentMesh: 1
+--- !u!82 &960423457
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960423453}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: d0a936c9eacbdf64e807de065d4a0d27, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &972309394
 GameObject:
   m_ObjectHideFlags: 0
@@ -32586,7 +33169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1124544556
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37699,6 +38282,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302349245}
   m_CullTransparentMesh: 1
+--- !u!1 &1312221840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1312221841}
+  m_Layer: 5
+  m_Name: Explicacion2_momento2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1312221841
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312221840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1357140460}
+  - {fileID: 1734631882}
+  m_Father: {fileID: 752424389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
+  m_SizeDelta: {x: 1920.2, y: 1079.9}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1312500611
 GameObject:
   m_ObjectHideFlags: 0
@@ -39033,6 +39653,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352707689}
+  m_CullTransparentMesh: 1
+--- !u!1 &1357140459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1357140460}
+  - component: {fileID: 1357140462}
+  - component: {fileID: 1357140461}
+  m_Layer: 5
+  m_Name: Byte_gamificacion (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1357140460
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357140459}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.8031042, y: 2.8031042, z: 2.8031042}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1312221841}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -633, y: 41.004143}
+  m_SizeDelta: {x: 124, y: 165}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1357140461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357140459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1749430249, guid: 916da87ec5cd77d43b809bfd85651a9d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1357140462
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357140459}
   m_CullTransparentMesh: 1
 --- !u!1 &1359925214
 GameObject:
@@ -42364,7 +43059,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 113756cd5db1e3a4b811a4bf3fd77927, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -46627,7 +47322,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 10b8cb156e5b8f84c8e8c44d9fd07138, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -47979,7 +48674,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 13f98e222efbd6e43b56cd37f5340725, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -49358,6 +50053,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734465508}
   m_CullTransparentMesh: 1
+--- !u!1 &1734631881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734631882}
+  - component: {fileID: 1734631884}
+  - component: {fileID: 1734631883}
+  m_Layer: 5
+  m_Name: Panel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1734631882
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734631881}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 77141349}
+  m_Father: {fileID: 1312221841}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 123, y: 325.00208}
+  m_SizeDelta: {x: -744.1697, y: -656.7671}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1734631883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734631881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b1414ab5f77eaa24787b6b08a17dfb98, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1734631884
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734631881}
+  m_CullTransparentMesh: 1
 --- !u!1 &1734945317
 GameObject:
   m_ObjectHideFlags: 0
@@ -49487,7 +50258,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 34c82ff2b856dbe4fa649528de6b54c0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -50279,6 +51050,7 @@ GameObject:
   - component: {fileID: 1766443472}
   - component: {fileID: 1766443474}
   - component: {fileID: 1766443473}
+  - component: {fileID: 1766443475}
   m_Layer: 5
   m_Name: PanelIncorrecto
   m_TagString: Untagged
@@ -50345,6 +51117,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766443471}
   m_CullTransparentMesh: 1
+--- !u!82 &1766443475
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766443471}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3b1230d5d7ab8834f855ecb809352c9e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1770392017
 GameObject:
   m_ObjectHideFlags: 0
@@ -51278,7 +52147,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 79873bb6a6846364dbf965bbbdd3d6a0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -51432,7 +52301,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c0b46f1b620869b41b412e35ba21ed1d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3576d25062ef1c94bb89e6163098d15b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -54315,7 +55184,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: fa5cb56a50096cd4c8956a922e59d846, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -55581,7 +56450,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: c4d9748310e148b4f8eba653179c4235, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -56540,7 +57409,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c2fde331e2672cc45bc21ab96ebec907, type: 3}
+  m_Resource: {fileID: 8300000, guid: 11ddb2254ded6c74bbcd34a94def8dc4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

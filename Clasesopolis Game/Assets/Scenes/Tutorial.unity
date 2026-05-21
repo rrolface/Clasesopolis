@@ -21033,7 +21033,7 @@ MonoBehaviour:
   - nombrePaso: Bienvenida
     mensajeTexto: "\xA1Bienvenid@ ve! Soy Inspector Byte, tu gu\xEDa en esta ciudad
       que apenas est\xE1 tomando forma: Clases\xF3polis."
-    audioPaso: {fileID: 8300000, guid: dedadc69bd6932e40a6d4ed53cb53bde, type: 3}
+    audioPaso: {fileID: 8300000, guid: 6d4fbd4089f323a499d817eff7769d9b, type: 3}
     panelActivo: {fileID: 868421919}
     componenteTextoUI: {fileID: 2094888471}
     esPasoDeEjercicio: 0
@@ -21045,7 +21045,7 @@ MonoBehaviour:
   - nombrePaso: Bienvenida_2
     mensajeTexto: "Vamos a levantar esta ciudad paso a paso. Cada reto que completes
       construir\xE1 algo nuevo aqu\xED."
-    audioPaso: {fileID: 8300000, guid: 50455aba59cd34143be0dcd6821741b6, type: 3}
+    audioPaso: {fileID: 8300000, guid: f44bc941e928436478d3bf445e98ae9b, type: 3}
     panelActivo: {fileID: 1990557847}
     componenteTextoUI: {fileID: 1943962223}
     esPasoDeEjercicio: 0
@@ -21056,7 +21056,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: presentacionFase
     mensajeTexto: "\xA1Mira Ve!, tenemos 4 fases preparadas para vos"
-    audioPaso: {fileID: 8300000, guid: 193cffd23b1776843be9f281b5802833, type: 3}
+    audioPaso: {fileID: 8300000, guid: b9b19c5fcfcb4354297ce375dccb3d40, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 1931778028}
     esPasoDeEjercicio: 0
@@ -21067,7 +21067,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: clasesYObjetos
     mensajeTexto: Clases y objetos
-    audioPaso: {fileID: 8300000, guid: 7093284e09fdbfa4fbc00edf42a0df99, type: 3}
+    audioPaso: {fileID: 8300000, guid: b24febaf8d0416f46bff80c850e7282f, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 146535248}
     esPasoDeEjercicio: 0
@@ -21078,7 +21078,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: Tipos de datos
     mensajeTexto: Tipos de datos
-    audioPaso: {fileID: 8300000, guid: edf424b3b612d7b468b333508aba1bfc, type: 3}
+    audioPaso: {fileID: 8300000, guid: 677b6a1de92b0a846846cc530e1ae0a7, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 1446639690}
     esPasoDeEjercicio: 0
@@ -21089,7 +21089,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: Metodos
     mensajeTexto: "M\xE9todos"
-    audioPaso: {fileID: 8300000, guid: 8a34a669f80746a4298ac94c5517d671, type: 3}
+    audioPaso: {fileID: 8300000, guid: bc592fc9fa15141419a3d58fe653d3d9, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 2043681872}
     esPasoDeEjercicio: 0
@@ -21100,7 +21100,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: Asociaciones
     mensajeTexto: "Asociaciones y \ncardinalidades"
-    audioPaso: {fileID: 8300000, guid: d8de4682e0e7eae44b1c0fb1807c6a50, type: 3}
+    audioPaso: {fileID: 8300000, guid: d033fb402cbdfcf4c92e313b6b616b86, type: 3}
     panelActivo: {fileID: 2117015113}
     componenteTextoUI: {fileID: 736978384}
     esPasoDeEjercicio: 0
@@ -21111,7 +21111,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: Puntos_XP
     mensajeTexto: Si sos constante podras ganar XP
-    audioPaso: {fileID: 8300000, guid: 5538c8b27820b2d44b80fa0b5581854e, type: 3}
+    audioPaso: {fileID: 8300000, guid: 64938eeda09cab444ac5284521f6dd28, type: 3}
     panelActivo: {fileID: 757698934}
     componenteTextoUI: {fileID: 1909499848}
     esPasoDeEjercicio: 0
@@ -21123,7 +21123,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: Rachas
     mensajeTexto: Ojo si haces tus retos diarios sin fallar
-    audioPaso: {fileID: 8300000, guid: ef1ec426e72707d46aa327ac0799e0e7, type: 3}
+    audioPaso: {fileID: 8300000, guid: 867fa6f7f13f1de418a1a4621437dec6, type: 3}
     panelActivo: {fileID: 757698934}
     componenteTextoUI: {fileID: 1909499848}
     esPasoDeEjercicio: 0
@@ -21136,7 +21136,7 @@ MonoBehaviour:
     - {fileID: 201822545}
   - nombrePaso: Insignias
     mensajeTexto: Ahora te presento las insignias
-    audioPaso: {fileID: 8300000, guid: 2a4cbbf2180d5a849917a4ee061f0e14, type: 3}
+    audioPaso: {fileID: 8300000, guid: 2f6a260b7b88b004b91507ca58398e0d, type: 3}
     panelActivo: {fileID: 757698934}
     componenteTextoUI: {fileID: 1909499848}
     esPasoDeEjercicio: 0
@@ -21149,7 +21149,7 @@ MonoBehaviour:
     - {fileID: 987228718}
   - nombrePaso: Interfaz-Introduccion
     mensajeTexto: Ahora Vamos con tu interfaz, la del usuario
-    audioPaso: {fileID: 8300000, guid: 18f0e51cf57e0204185077fcd1e3f7c1, type: 3}
+    audioPaso: {fileID: 8300000, guid: a8809deb0e38a744396918a6a3f921d4, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1879044342}
     esPasoDeEjercicio: 0
@@ -21162,7 +21162,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: Interfaz-Usuario
     mensajeTexto: "Aqu\xED podras ver cuanto llevas"
-    audioPaso: {fileID: 8300000, guid: 65525d3046ed84044a27427cf04712b4, type: 3}
+    audioPaso: {fileID: 8300000, guid: 70fea55f0493d8d40aaf7840ea03374e, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1480235366}
     esPasoDeEjercicio: 0
@@ -21178,7 +21178,7 @@ MonoBehaviour:
     - {fileID: 0}
   - nombrePaso: Interfaz-Tableros
     mensajeTexto: Aqui podras ver tu XP, rachas e insignias
-    audioPaso: {fileID: 8300000, guid: 46802caf702bbde4ca1c94a8f05f9411, type: 3}
+    audioPaso: {fileID: 8300000, guid: a2f918f3890f12d48856638173013ddb, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1366911747}
     esPasoDeEjercicio: 0
@@ -21195,7 +21195,7 @@ MonoBehaviour:
     - {fileID: 994804935}
   - nombrePaso: Interfaz-BotonFases
     mensajeTexto: Con este boton de fases
-    audioPaso: {fileID: 8300000, guid: 30148d462d3f1a54790141ccd2aba9c8, type: 3}
+    audioPaso: {fileID: 8300000, guid: c52c572af4dd32e419532bfe4ccde5db, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1839079917}
     esPasoDeEjercicio: 0
@@ -21212,7 +21212,7 @@ MonoBehaviour:
     - {fileID: 0}
   - nombrePaso: Fases
     mensajeTexto: Con este boton de fases
-    audioPaso: {fileID: 8300000, guid: 30148d462d3f1a54790141ccd2aba9c8, type: 3}
+    audioPaso: {fileID: 8300000, guid: 8820757ca5ff26048a1d9720229b3679, type: 3}
     panelActivo: {fileID: 312171170}
     componenteTextoUI: {fileID: 1839079917}
     esPasoDeEjercicio: 0
@@ -21228,7 +21228,7 @@ MonoBehaviour:
     - {fileID: 1851294203}
   - nombrePaso: Interfaz-BotonModoLibre
     mensajeTexto: Con este boton Entras al modo libre
-    audioPaso: {fileID: 8300000, guid: feb79ee7c631baf4599250bbf4918b8a, type: 3}
+    audioPaso: {fileID: 8300000, guid: 43fbf7979bc7aca4c812d43b4301aeda, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1124114211}
     esPasoDeEjercicio: 0
@@ -21244,7 +21244,7 @@ MonoBehaviour:
     - {fileID: 0}
   - nombrePaso: PanelModoContuccion/Libre
     mensajeTexto: Cuando superes fases desbloquearas monumentos
-    audioPaso: {fileID: 8300000, guid: 002b2668a3cf9ac4e9ba4f0e836ad94e, type: 3}
+    audioPaso: {fileID: 8300000, guid: 0a1ab078480d7b44fa0607d808faedb4, type: 3}
     panelActivo: {fileID: 1749118166}
     componenteTextoUI: {fileID: 1561896220}
     esPasoDeEjercicio: 0
@@ -21258,7 +21258,7 @@ MonoBehaviour:
     - {fileID: 931087231}
   - nombrePaso: PanelModoLibre/construccion
     mensajeTexto: Queres ver como va quedando la ciudad
-    audioPaso: {fileID: 8300000, guid: caa8751609c2c43419fdd803646589c6, type: 3}
+    audioPaso: {fileID: 8300000, guid: 3810715a1ce455749a275118e9a314e3, type: 3}
     panelActivo: {fileID: 1749118166}
     componenteTextoUI: {fileID: 1561896220}
     esPasoDeEjercicio: 0
@@ -21269,7 +21269,7 @@ MonoBehaviour:
     objetosADesactivar: []
   - nombrePaso: finalTutorial
     mensajeTexto: Listo pa' estas hecho
-    audioPaso: {fileID: 8300000, guid: 0808764472cc806468f5f75e5411c476, type: 3}
+    audioPaso: {fileID: 8300000, guid: fd2c708ad0b24ef47b3cbc691109efc3, type: 3}
     panelActivo: {fileID: 311536374}
     componenteTextoUI: {fileID: 1879044342}
     esPasoDeEjercicio: 0
