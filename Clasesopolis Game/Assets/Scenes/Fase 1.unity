@@ -25870,6 +25870,18 @@ MonoBehaviour:
             previsualizar como se ver\xE1 la ciudad."
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1101155647}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1101155645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25920,7 +25932,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1a2bc613115612f4497cd134c2104f51, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -29641,6 +29653,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1238635977}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1238635975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29691,7 +29715,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3e22ed7bee17f304caaf1c0752c4c2d4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -48936,6 +48960,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2054331457}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2054331455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48986,7 +49022,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 710b715b0c584764ca8e6c143e401736, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
