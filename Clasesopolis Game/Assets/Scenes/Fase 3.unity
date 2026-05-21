@@ -1755,6 +1755,7 @@ GameObject:
   - component: {fileID: 107399445}
   - component: {fileID: 107399444}
   - component: {fileID: 107399443}
+  - component: {fileID: 107399446}
   m_Layer: 5
   m_Name: SalirBoton
   m_TagString: Untagged
@@ -1826,9 +1827,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
-        m_MethodName: ConfirmarLogout
+      - m_Target: {fileID: 107399446}
+        m_TargetAssemblyTypeName: CambiarEscena, Assembly-CSharp
+        m_MethodName: Ir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1876,6 +1877,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107399441}
   m_CullTransparentMesh: 1
+--- !u!114 &107399446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107399441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c3c6497297ba8468e9069e94d2d8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreEscena: Inicio
 --- !u!1 &109244309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,6 +2533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 207009003}
   - component: {fileID: 207009004}
+  - component: {fileID: 207009005}
   m_Layer: 5
   m_Name: RetoIncorrecto
   m_TagString: Untagged
@@ -2575,6 +2590,19 @@ MonoBehaviour:
   panelConfirmacion: {fileID: 0}
   panelError: {fileID: 0}
   panelExito: {fileID: 0}
+--- !u!114 &207009005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207009002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 5191c76e75d4a1b42bd712a5768faad0, type: 3}
 --- !u!1 &214215545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,6 +3098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 256440792}
+  - component: {fileID: 256440793}
   m_Layer: 5
   m_Name: Reto_1
   m_TagString: Untagged
@@ -3106,6 +3135,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &256440793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256440791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: fdbfce4070f64234c883c3117ce1e71a, type: 3}
 --- !u!1 &261189178
 GameObject:
   m_ObjectHideFlags: 0
@@ -4702,6 +4744,7 @@ GameObject:
   - component: {fileID: 378863346}
   - component: {fileID: 378863348}
   - component: {fileID: 378863347}
+  - component: {fileID: 378863349}
   m_Layer: 5
   m_Name: Panel-Por Que?
   m_TagString: Untagged
@@ -4768,6 +4811,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378863345}
   m_CullTransparentMesh: 1
+--- !u!114 &378863349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378863345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 55a985c06e712784ba251b067fdca8a1, type: 3}
 --- !u!1 &384504049
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,9 +6114,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
-        m_MethodName: AbrirConfirmacionZonaLibre
+      - m_Target: {fileID: 1063746197}
+        m_TargetAssemblyTypeName: BotonIrAConstruccion, Assembly-CSharp
+        m_MethodName: IrAConstruccion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7180,10 +7236,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
-        m_MethodName: Reanudar
-        m_Mode: 1
+      - m_Target: {fileID: 1501729509}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7517,6 +7573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595229352}
+  - component: {fileID: 595229353}
   m_Layer: 5
   m_Name: Reto_2-Contextto
   m_TagString: Untagged
@@ -7546,6 +7603,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &595229353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595229351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 7871d2ae80295854892ee8d16b573e39, type: 3}
 --- !u!1 &603540363
 GameObject:
   m_ObjectHideFlags: 0
@@ -7976,6 +8046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 614393532}
+  - component: {fileID: 614393533}
   m_Layer: 5
   m_Name: Reto2
   m_TagString: Untagged
@@ -8012,6 +8083,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &614393533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614393531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: c808430919e6c5c4ca29801f1f0bb969, type: 3}
 --- !u!1 &616164311
 GameObject:
   m_ObjectHideFlags: 0
@@ -8523,7 +8607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646000064}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8966,17 +9050,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
-        m_MethodName: AbrirConfirmacionLogout
-        m_Mode: 1
+      - m_Target: {fileID: 1659217111}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &656392588
 MonoBehaviour:
@@ -11308,6 +11392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 846668156}
+  - component: {fileID: 846668157}
   m_Layer: 5
   m_Name: Reto2Correcto
   m_TagString: Untagged
@@ -11337,6 +11422,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &846668157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846668155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: ff7901a2cc30e524abcb99afd132b4bb, type: 3}
 --- !u!1 &847630645
 GameObject:
   m_ObjectHideFlags: 0
@@ -12896,6 +12994,189 @@ RectTransform:
   m_AnchoredPosition: {x: -4.9999695, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &989800848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 989800850}
+  - component: {fileID: 989800849}
+  m_Layer: 0
+  m_Name: ManagerFase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &989800849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989800848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d67102fc5db6124c84211621e94977a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numeroFase: 3
+  usarCheckpointsAlIniciar: 1
+  botonContinuar: {fileID: 1938736789}
+  parlanteVoces: {fileID: 1921360281}
+  pasos:
+  - nombrePaso: Bienvenida
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 1243535265}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 1189639659}
+    desactivarAlEntrar: []
+  - nombrePaso: Explicacion_1
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 1243535265}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 1491644079}
+    desactivarAlEntrar:
+    - {fileID: 1189639659}
+  - nombrePaso: Explicacion_2
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 1243535265}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 1331254960}
+    desactivarAlEntrar:
+    - {fileID: 1491644079}
+  - nombrePaso: Explicacion_3
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 0}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 1210502464}
+    desactivarAlEntrar:
+    - {fileID: 1331254960}
+  - nombrePaso: Explicacion_4
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 1243535265}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 1503388698}
+    desactivarAlEntrar:
+    - {fileID: 1210502464}
+  - nombrePaso: Reto
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 1243535265}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 1
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 1888605416}
+    desactivarAlEntrar:
+    - {fileID: 1503388698}
+  - nombrePaso: Reto_1
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 1243535265}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 256440791}
+    desactivarAlEntrar:
+    - {fileID: 1888605416}
+  - nombrePaso: Reto_2
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 1243535265}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 0
+    escenaDestino: 
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 614393531}
+    desactivarAlEntrar:
+    - {fileID: 256440791}
+  - nombrePaso: PanelFinal
+    mensajeTexto: 
+    audioPaso: {fileID: 0}
+    panelPrincipal: {fileID: 1243535265}
+    textoUI: {fileID: 0}
+    esRetoInteractivos: 0
+    objetoDelReto: {fileID: 0}
+    esPasoFinal: 1
+    escenaDestino: Construccion
+    numeroFase: 0
+    esCheckpoint: 0
+    activarAlEntrar:
+    - {fileID: 1211306699}
+    desactivarAlEntrar:
+    - {fileID: 614393531}
+--- !u!4 &989800850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989800848}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 337.01663, y: -99.764465, z: 1368.1223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1010284064
 GameObject:
   m_ObjectHideFlags: 0
@@ -13536,7 +13817,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1063746196}
-  - component: {fileID: 1063746195}
+  - component: {fileID: 1063746197}
+  - component: {fileID: 1063746198}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -13544,23 +13826,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1063746195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063746194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d67102fc5db6124c84211621e94977a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numeroFase: 3
-  usarCheckpointsAlIniciar: 1
-  botonContinuar: {fileID: 0}
-  parlanteVoces: {fileID: 0}
-  pasos: []
 --- !u!4 &1063746196
 Transform:
   m_ObjectHideFlags: 0
@@ -13569,13 +13834,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063746194}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1179.5801, y: 492.226, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1063746197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063746194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fafda0085fffd2d4f92f5943522dade7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreEscena: Construccion
+--- !u!114 &1063746198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063746194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c3c6497297ba8468e9069e94d2d8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreEscena: 
 --- !u!1 &1076497135
 GameObject:
   m_ObjectHideFlags: 0
@@ -14346,10 +14637,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
-        m_MethodName: CancelarAccion
-        m_Mode: 1
+      - m_Target: {fileID: 1659217111}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14592,6 +14883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1189639660}
+  - component: {fileID: 1189639661}
   m_Layer: 5
   m_Name: Bienvenida
   m_TagString: Untagged
@@ -14620,6 +14912,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1189639661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189639659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 0}
 --- !u!1 &1191152601
 GameObject:
   m_ObjectHideFlags: 0
@@ -15065,6 +15370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1210502465}
+  - component: {fileID: 1210502466}
   m_Layer: 5
   m_Name: Explicacion_3
   m_TagString: Untagged
@@ -15096,6 +15402,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1210502466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210502464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 094f817670394d8469187271029aa1a8, type: 3}
 --- !u!1 &1211306699
 GameObject:
   m_ObjectHideFlags: 0
@@ -15106,6 +15425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211306700}
   - component: {fileID: 1211306701}
+  - component: {fileID: 1211306702}
   m_Layer: 5
   m_Name: PanelFinal
   m_TagString: Untagged
@@ -15161,6 +15481,19 @@ MonoBehaviour:
   panelConfirmacion: {fileID: 0}
   panelError: {fileID: 0}
   panelExito: {fileID: 0}
+--- !u!114 &1211306702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211306699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 3ed4b00c4ce109548bb7197cac8d649a, type: 3}
 --- !u!1 &1212765544
 GameObject:
   m_ObjectHideFlags: 0
@@ -15498,9 +15831,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ComprobarMultiple, Assembly-CSharp
-        m_MethodName: EscenaFase3
+      - m_Target: {fileID: 1063746197}
+        m_TargetAssemblyTypeName: BotonIrAConstruccion, Assembly-CSharp
+        m_MethodName: IrAConstruccion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17162,6 +17495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1331254961}
   - component: {fileID: 1331254962}
+  - component: {fileID: 1331254963}
   m_Layer: 5
   m_Name: Explicacion_2
   m_TagString: Untagged
@@ -17223,6 +17557,19 @@ MonoBehaviour:
     un plano que indique c\xF3mo ser\xE1 cada construcci\xF3n.\L En programaci\xF3n,
     ese plano se llama Clase."
   planosEsCorrecto: 1
+--- !u!114 &1331254963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331254960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 45253a4c809063d41946832c58475388, type: 3}
 --- !u!1 &1337489495
 GameObject:
   m_ObjectHideFlags: 0
@@ -19218,6 +19565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1491644080}
+  - component: {fileID: 1491644081}
   m_Layer: 5
   m_Name: Explicacion_1
   m_TagString: Untagged
@@ -19246,6 +19594,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1491644081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491644079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 2194aae9bdd694648a79ac263b61bf37, type: 3}
 --- !u!1 &1499448981
 GameObject:
   m_ObjectHideFlags: 0
@@ -19518,6 +19879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1503388699}
+  - component: {fileID: 1503388700}
   m_Layer: 5
   m_Name: Explicacion_4
   m_TagString: Untagged
@@ -19551,6 +19913,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1503388700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503388698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 988dd3551222a4b4890660f0cd330047, type: 3}
 --- !u!1 &1516670575
 GameObject:
   m_ObjectHideFlags: 0
@@ -21846,702 +22221,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642238735}
   m_CullTransparentMesh: 1
---- !u!1 &1646496950
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1646496956}
-  - component: {fileID: 1646496955}
-  - component: {fileID: 1646496954}
-  - component: {fileID: 1646496953}
-  - component: {fileID: 1646496952}
-  - component: {fileID: 1646496951}
-  m_Layer: 0
-  m_Name: _MANAGER_Fase3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1646496951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646496950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d051f5cd8096ce14a88df6b235157f35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMixer: {fileID: 24100000, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
-  parametroMusica: musicVol
-  parametroVoces: voiceVol
-  parametroSFX: sfxVol
-  sliderMusica: {fileID: 0}
-  sliderVoces: {fileID: 0}
-  sliderSFX: {fileID: 0}
-  autoConectarBotones: 0
-  botonMuteMusica: {fileID: 0}
-  botonMuteVoces: {fileID: 0}
-  botonMuteSFX: {fileID: 0}
-  iconoMuteMusica: {fileID: 0}
-  iconoMuteVoces: {fileID: 0}
-  iconoMuteSFX: {fileID: 0}
-  spriteMusicaActiva: {fileID: 21300000, guid: dc2c1300dea3c85409b4c910c985bdae, type: 3}
-  spriteMusicaMuteada: {fileID: 21300000, guid: 880e2c81711b8134a8f41097ba2e7e64, type: 3}
-  spriteVocesActivas: {fileID: 21300000, guid: bb6986eb4be1e394ca6f8d9499a7c942, type: 3}
-  spriteVocesMuteadas: {fileID: 21300000, guid: 61d91487d7c4123439eccf5390c829fc, type: 3}
-  spriteSFXActivos: {fileID: 21300000, guid: bb6986eb4be1e394ca6f8d9499a7c942, type: 3}
-  spriteSFXMuteados: {fileID: 21300000, guid: 61d91487d7c4123439eccf5390c829fc, type: 3}
---- !u!114 &1646496952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646496950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e9440b2a3ce1a4ebe41ca88e7e114e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelPausa: {fileID: 0}
-  estaPausado: 0
-  audioSourceVoces: {fileID: 1646496953}
-  panelConfirmarZonaLibre: {fileID: 0}
-  panelConfirmarLogout: {fileID: 0}
---- !u!82 &1646496953
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646496950}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7714597440883442523, guid: 3abdd47985b221441b00d9d7766aca4f, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1646496954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646496950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7d77cf9aacb1924f83b51f3464264f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textoXP: {fileID: 0}
---- !u!114 &1646496955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646496950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d67102fc5db6124c84211621e94977a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numeroFase: 1
-  usarCheckpointsAlIniciar: 1
-  botonContinuar: {fileID: 0}
-  parlanteVoces: {fileID: 0}
-  pasos:
-  - nombrePaso: Bienvenda
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar: []
-  - nombrePaso: Explicacion_1
-    mensajeTexto: "En esta fase, aprender\xE1s a reconocer una clase dentro del mundo
-      de la programaci\xF3n. \xA1Ser\xE1 tu primera misi\xF3n para empezar a dar
-      forma a Clases\xF3polis!"
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: JuegoSimple
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 1
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar: []
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Explicacion_2
-    mensajeTexto: "Una clase es un plano o molde que define c\xF3mo ser\xE1n los
-      objetos. Especifica las caracter\xEDsticas y comportamientos que esos objetos
-      tendr\xE1n cuando se creen."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Explicacion_3
-    mensajeTexto: Por lo que una clase puede ser una casa,  edificio,  museo, o biblioteca.
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Consejito
-    mensajeTexto: "Te doy un consejito para que pod\xE1s identificar una clase."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Preparado_para_reto
-    mensajeTexto: "Ahora que ya sab\xE9s el concepto de Clase \xBFest\xE1s listo
-      para empezar el reto?"
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Informacion_reto
-    mensajeTexto: "En el siguiente reto, se te presentar\xE1n diferentes elementos
-      de la ciudad. Algunos de ellos son planos de edificios, y otros no. Tu misi\xF3n
-      es identificar cu\xE1les representan clases y cu\xE1les no. Recuerda, una clase
-      es un plano, no una construcci\xF3n real."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: RetoArrastraItem
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 1
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: FinalizacionReto
-    mensajeTexto: Breve ya terminaste tu primer reto miremos tus puntos optenidos
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-  - nombrePaso: Puntuacion
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - nombrePaso: Racha
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Insignia
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Construccion
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Desicion
-    mensajeTexto: Vas super bien, ya casi acabas la fase 1, vamos que falta poco
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 1
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 1
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-  - nombrePaso: Explicacion_momento2
-    mensajeTexto: "Ahora aprender\xE1s sobre un concepto muy relacionado a las Clases
-      y son los Objetos o instancias."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Explicacion2_momento2
-    mensajeTexto: "A continuaci\xF3n, aprender\xE1s a reconocer un objeto dentro
-      del mundo de la programaci\xF3n. \xA1deber\xE1s reconocer la diferencia entre
-      clase y objeto para empezar a construir en Clases\xF3polis!"
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Explicacion3_momento2
-    mensajeTexto: "Un objeto es una entidad concreta que representa algo del mundo
-      real o una abstracci\xF3n dentro del programa. Es una instancia de una clase,
-      la cual es un molde o plantilla que define las caracter\xEDsticas y comportamientos
-      generales de ese tipo de entidad. Los objetos son fundamentales porque permiten
-      modelar entidades que interact\xFAan entre s\xED dentro de un sistema.\n\nUn
-      objeto no solo almacena datos (a trav\xE9s de atributos) y tiene comportamientos
-      (a trav\xE9s de m\xE9todos), sino que tambi\xE9n encapsula informaci\xF3n y
-      la hace accesible solo de manera controlada."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Explicacion4_momento2
-    mensajeTexto: "\nImagina que tenemos un edificio espec\xEDfico en la ciudad llamado
-      \"Edificio Central\", que est\xE1 en la Avenida Principal, tiene 10 pisos,
-      fue construido en 1998 y est\xE1 hecho de ladrillo."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Explicacion5_momento2
-    mensajeTexto: "Imagina que tenemos un edificio espec\xEDfico en la ciudad llamado
-      \"Edificio Central\", que est\xE1 en la Avenida Principal, tiene 10 pisos,
-      fue construido en 1998 y est\xE1 hecho de ladrillo."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Explicacion6_momento2
-    mensajeTexto: "Bueno ya sabes el concepto de Objeto \xBFest\xE1s listo para empezar
-      el reto?"
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Preparacion_reto_momento2
-    mensajeTexto: "Este reto consiste en identificar cu\xE1l de los elementos presentados
-      son clases (planos) y cu\xE1les son objetos (instancias concretas). Una clase
-      es un modelo general que describe c\xF3mo debe ser un edificio, mientras que
-      un objeto es una construcci\xF3n real basada en ese modelo."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: RetoArrastraItem_2
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 1
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: FinalizacionReto_momento2
-    mensajeTexto: "\xA1Bien ah\xED! Lo hiciste.\n\nMuy bien, haz finalizado tu reto
-      de la fase 2, ya reconoces e identificas el concepto de clases y objetos."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-  - nombrePaso: Puntuacion_2
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - nombrePaso: Racha_2
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Insignia_2
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Construccion
-    mensajeTexto: 
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 0
-    escenaDestino: 
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-  - nombrePaso: Final
-    mensajeTexto: "\xA1Epaaa!, completaste la fase 1. Eres un experto en clases y
-      objetos.\n\n\xE1demas de que conseguiste muchas cosas.\n\nTe recuerdo que si
-      algo no te quedo claro, puedes volver a realizar esta fase."
-    audioPaso: {fileID: 0}
-    panelPrincipal: {fileID: 0}
-    textoUI: {fileID: 0}
-    esRetoInteractivos: 0
-    objetoDelReto: {fileID: 0}
-    esPasoFinal: 1
-    escenaDestino: Construccion
-    numeroFase: 1
-    esCheckpoint: 0
-    activarAlEntrar:
-    - {fileID: 0}
-    desactivarAlEntrar:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
---- !u!4 &1646496956
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646496950}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 601.4576, y: 288.59747, z: 8.138077}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1659217111
 GameObject:
   m_ObjectHideFlags: 0
@@ -22632,6 +22311,7 @@ GameObject:
   - component: {fileID: 1659906277}
   - component: {fileID: 1659906279}
   - component: {fileID: 1659906278}
+  - component: {fileID: 1659906280}
   m_Layer: 5
   m_Name: Panel-Por Que?
   m_TagString: Untagged
@@ -22698,6 +22378,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659906276}
   m_CullTransparentMesh: 1
+--- !u!114 &1659906280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659906276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: ad88653f837c9e944adc510d464296c0, type: 3}
 --- !u!1 &1661715553
 GameObject:
   m_ObjectHideFlags: 0
@@ -23083,7 +22776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685503637}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24088,17 +23781,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
-        m_MethodName: Pausar
-        m_Mode: 1
+      - m_Target: {fileID: 1501729509}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1769850563
 MonoBehaviour:
@@ -24852,6 +24545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1833470007}
   - component: {fileID: 1833470006}
+  - component: {fileID: 1833470008}
   m_Layer: 5
   m_Name: Reto2Incorrecto
   m_TagString: Untagged
@@ -24908,6 +24602,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: 37}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1833470008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833470005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 5191c76e75d4a1b42bd712a5768faad0, type: 3}
 --- !u!1 &1841957781
 GameObject:
   m_ObjectHideFlags: 0
@@ -25696,6 +25403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1888605417}
+  - component: {fileID: 1888605418}
   m_Layer: 5
   m_Name: Reto
   m_TagString: Untagged
@@ -25725,6 +25433,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1888605418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888605416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: 2df93b598545b9c4b951813856da0d05, type: 3}
 --- !u!1 &1896176248
 GameObject:
   m_ObjectHideFlags: 0
@@ -25734,6 +25455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1896176249}
+  - component: {fileID: 1896176250}
   m_Layer: 5
   m_Name: RetoCorrecto
   m_TagString: Untagged
@@ -25763,6 +25485,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00033569, y: -0.0020447}
   m_SizeDelta: {x: 1920.2, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1896176250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896176248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 8300000, guid: ddae6e7dc5f309642baf681d229344f1, type: 3}
 --- !u!1 &1898794910
 GameObject:
   m_ObjectHideFlags: 0
@@ -26265,6 +26000,149 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914566963}
   m_CullTransparentMesh: 1
+--- !u!1 &1921360279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921360282}
+  - component: {fileID: 1921360281}
+  - component: {fileID: 1921360280}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1921360280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921360279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24756830830de419d594ebf50889f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDelPanel: {fileID: 0}
+--- !u!82 &1921360281
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921360279}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1921360282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921360279}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 510.58542, y: 295.94214, z: 713.0085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1923470849
 GameObject:
   m_ObjectHideFlags: 0
@@ -29209,4 +29087,5 @@ SceneRoots:
   - {fileID: 1927355395}
   - {fileID: 1685503640}
   - {fileID: 1063746196}
-  - {fileID: 1646496956}
+  - {fileID: 989800850}
+  - {fileID: 1921360282}
