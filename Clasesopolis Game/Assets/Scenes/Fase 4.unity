@@ -383,7 +383,7 @@ MonoBehaviour:
   numeroFase: 4
   usarCheckpointsAlIniciar: 1
   botonContinuar: {fileID: 2071371408}
-  parlanteVoces: {fileID: 0}
+  parlanteVoces: {fileID: 6822671}
   pasos:
   - nombrePaso: Bienvenda
     mensajeTexto: 
