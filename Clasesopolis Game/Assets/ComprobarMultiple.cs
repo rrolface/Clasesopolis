@@ -35,6 +35,7 @@ public class ComprobarMultiple : MonoBehaviour
         {
             panelCorrecto.SetActive(true);
             PanelReto2.SetActive(false);
+            ProgresoGlobal.SumarXP(100);
         }
         else
         {
