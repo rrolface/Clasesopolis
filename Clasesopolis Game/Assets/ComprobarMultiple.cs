@@ -52,6 +52,9 @@ public class ComprobarMultiple : MonoBehaviour
     public void FaseConstruccion()
     {
         SceneManager.LoadScene("Construccion");
+
+        //aqui activo la fase 2
+        ProgresoGlobal.RegistrarFinDeFase(2);
     }
 
     public void ResetearReto2()
