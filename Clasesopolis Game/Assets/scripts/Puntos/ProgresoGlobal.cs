@@ -13,12 +13,46 @@ public static class ProgresoGlobal
     public static string UltimaInsignia = "";
     public static bool UltimaInsigniaEsNueva = false;
 
+    // --- Título actualmente equipado por el jugador ---
+    /// <summary>
+    /// Nombre del título/insignia que el jugador eligió como su "título activo".
+    /// Si está vacío, el jugador no tiene título equipado.
+    /// La UI de Construcción lo muestra junto al listón/trofeo.
+    /// </summary>
+    public static string TituloActivo = "";
+
     // -------------------- XP --------------------
     public static void SumarXP(int cantidad)
     {
         XP += cantidad;
         UltimaXPGanada = cantidad;
         Debug.Log($"¡Ganaste {cantidad} XP! Total: {XP}");
+    }
+
+    /// <summary>
+    /// Devuelve true si el jugador tiene al menos 'cantidad' XP disponible.
+    /// Útil para validar antes de gastar (por ejemplo al construir).
+    /// </summary>
+    public static bool TieneXP(int cantidad)
+    {
+        return XP >= cantidad;
+    }
+
+    /// <summary>
+    /// Resta XP al total del jugador. Nunca baja de 0 (clamp).
+    /// No toca UltimaXPGanada — ese marcador es solo para "recompensas ganadas",
+    /// no para gastos. Devuelve la cantidad realmente descontada.
+    /// </summary>
+    public static int RestarXP(int cantidad)
+    {
+        if (cantidad <= 0) return 0;
+
+        int descontado = Mathf.Min(cantidad, XP);
+        XP -= descontado;
+        if (XP < 0) XP = 0;
+
+        Debug.Log($"Se gastaron {descontado} XP. Total restante: {XP}");
+        return descontado;
     }
 
     // -------------------- RACHA --------------------
@@ -54,6 +88,7 @@ public static class ProgresoGlobal
         UltimaXPGanada = 0;
         UltimaInsignia = "";
         UltimaInsigniaEsNueva = false;
+        TituloActivo = "";
         Debug.Log("ProgresoGlobal: estado de recompensas reiniciado en memoria.");
     }
 
@@ -84,11 +119,45 @@ public static class ProgresoGlobal
             Insignias.Add(nombreInsignia);
             UltimaInsigniaEsNueva = true;
             Debug.Log($"Nueva Insignia desbloqueada: {nombreInsignia}");
+
+            // Si el jugador todavía no tiene título equipado, la primera insignia
+            // que gana queda como activa por defecto. Así el listón en la UI nunca
+            // está vacío después de ganar al menos una.
+            if (string.IsNullOrEmpty(TituloActivo))
+            {
+                TituloActivo = nombreInsignia;
+                Debug.Log($"[ProgresoGlobal] Título activo auto-equipado: {nombreInsignia}");
+            }
         }
         else
         {
             UltimaInsigniaEsNueva = false;
             Debug.Log($"Insignia ya obtenida: {nombreInsignia}");
         }
+    }
+
+    /// <summary>
+    /// Establece el título activo del jugador. Solo lo aplica si la insignia
+    /// ya está desbloqueada (presente en la lista Insignias). Si se pasa
+    /// string vacío o null, desequipa el título activo. Devuelve true si se aplicó.
+    /// </summary>
+    public static bool EstablecerTituloActivo(string nombreInsignia)
+    {
+        if (string.IsNullOrEmpty(nombreInsignia))
+        {
+            TituloActivo = "";
+            Debug.Log("[ProgresoGlobal] Título activo desequipado.");
+            return true;
+        }
+
+        if (!Insignias.Contains(nombreInsignia))
+        {
+            Debug.LogWarning($"[ProgresoGlobal] Intento de equipar título no desbloqueado: '{nombreInsignia}'");
+            return false;
+        }
+
+        TituloActivo = nombreInsignia;
+        Debug.Log($"[ProgresoGlobal] Título activo: {nombreInsignia}");
+        return true;
     }
 }

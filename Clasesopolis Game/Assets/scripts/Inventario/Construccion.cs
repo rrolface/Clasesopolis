@@ -26,4 +26,9 @@ public class Construccion
 
     [Tooltip("Prefab que se instanciará en el escenario al construir.")]
     public GameObject prefab;
+
+    [Header("Economía")]
+    [Tooltip("Cantidad de XP que se descuenta del jugador al colocar esta construcción. " +
+             "Si lo dejas en 0, la construcción es gratis. Valor sugerido por defecto: 30.")]
+    public int costoXP = 30;
 }

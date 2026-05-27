@@ -35,6 +35,10 @@ public class ConfiguracionPruebas : MonoBehaviour
     [Tooltip("Vacía los checkpoints y 'fase completada' en memoria al arrancar.")]
     public bool reiniciarCheckpointsEnMemoria = true;
 
+    [Tooltip("Reinicia a 0 el contador de construcciones de la ciudad (el slider de progreso). " +
+             "No toca PlayerPrefs porque el contador solo vive en memoria.")]
+    public bool reiniciarProgresoCiudadEnMemoria = true;
+
     [Tooltip("Borra TAMBIÉN los datos guardados en disco (PlayerPrefs) del inventario. " +
              "Útil para empezar de cero después de varias sesiones de prueba.")]
     public bool borrarDatosGuardadosEnDisco = false;
@@ -100,6 +104,11 @@ public class ConfiguracionPruebas : MonoBehaviour
             CheckpointsFase.ReiniciarEnMemoria();
         }
 
+        if (reiniciarProgresoCiudadEnMemoria)
+        {
+            CiudadProgreso.Reiniciar();
+        }
+
         // 4) Estado de fases (desbloqueo provisional para testing).
         //    El reset SIEMPRE va antes del desbloqueo, así no se pisan.
         if (resetearProgresoFases)
@@ -124,6 +133,7 @@ public class ConfiguracionPruebas : MonoBehaviour
                 $"reiniciarRecompensas={reiniciarRecompensasEnMemoria}, " +
                 $"reiniciarInv={reiniciarInventarioEnMemoria}, " +
                 $"reiniciarChk={reiniciarCheckpointsEnMemoria}, " +
+                $"reiniciarCiudad={reiniciarProgresoCiudadEnMemoria}, " +
                 $"borrarDisco(inv/chk)={borrarDatosGuardadosEnDisco}/{borrarCheckpointsEnDisco}, " +
                 $"resetearFases={resetearProgresoFases}, desbloquearHasta={desbloquearFasesHasta}");
         }
@@ -140,7 +150,14 @@ public class ConfiguracionPruebas : MonoBehaviour
         ProgresoGlobal.ReiniciarTodo();
         InventarioConstrucciones.ReiniciarEnMemoria();
         CheckpointsFase.ReiniciarEnMemoria();
-        Debug.Log("[ConfiguracionPruebas] Recompensas, inventario y checkpoints reiniciados en memoria.");
+        CiudadProgreso.Reiniciar();
+        Debug.Log("[ConfiguracionPruebas] Recompensas, inventario, checkpoints y progreso de ciudad reiniciados en memoria.");
+    }
+
+    [ContextMenu("Reiniciar progreso de ciudad (memoria)")]
+    private void ReiniciarCiudadAhora()
+    {
+        CiudadProgreso.Reiniciar();
     }
 
     [ContextMenu("Borrar inventario guardado en disco")]
