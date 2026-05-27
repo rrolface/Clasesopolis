@@ -768,6 +768,7 @@ MonoBehaviour:
     - {fileID: 152183536}
     desactivarAlEntrar:
     - {fileID: 590119095}
+    - {fileID: 152183536}
     animadorCamara: {fileID: 0}
     triggerCamara: 
     animadorByte: {fileID: 0}
