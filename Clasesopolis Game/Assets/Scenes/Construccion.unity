@@ -16405,6 +16405,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4994195461900782, guid: 0f06ecfa33f4cb348ab804a22c6de5ba, type: 3}
   m_PrefabInstance: {fileID: 1143861939}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1159505132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.63
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.63
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.63
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -273.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 37.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 412.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
+      propertyPath: m_Name
+      value: Meshy_AI_Azure_Pinnacle_Tower_0527211512_texture
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a52148ff54b858344877ebd30b4c98d8, type: 3}
 --- !u!1 &1160928101
 GameObject:
   m_ObjectHideFlags: 0
@@ -43084,3 +43157,4 @@ SceneRoots:
   - {fileID: 1490293267098141316}
   - {fileID: 4793491986577530339}
   - {fileID: 4162244142808354333}
+  - {fileID: 1159505132}
