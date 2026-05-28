@@ -13988,7 +13988,7 @@ MonoBehaviour:
   reiniciarRecompensasEnMemoria: 0
   reiniciarInventarioEnMemoria: 0
   reiniciarCheckpointsEnMemoria: 0
-  reiniciarProgresoCiudadEnMemoria: 1
+  reiniciarProgresoCiudadEnMemoria: 0
   borrarDatosGuardadosEnDisco: 0
   borrarCheckpointsEnDisco: 0
   desbloquearFasesHasta: 0

@@ -10704,17 +10704,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42bf4b3d964b4b4285dfc7f1ffc29bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desactivarPersistenciaInventario: 1
-  desactivarPersistenciaCheckpoints: 1
-  reiniciarRecompensasEnMemoria: 1
-  reiniciarInventarioEnMemoria: 1
-  reiniciarCheckpointsEnMemoria: 1
-  reiniciarProgresoCiudadEnMemoria: 1
-  borrarDatosGuardadosEnDisco: 1
-  borrarCheckpointsEnDisco: 1
+  desactivarPersistenciaInventario: 0
+  desactivarPersistenciaCheckpoints: 0
+  reiniciarRecompensasEnMemoria: 0
+  reiniciarInventarioEnMemoria: 0
+  reiniciarCheckpointsEnMemoria: 0
+  reiniciarProgresoCiudadEnMemoria: 0
+  borrarDatosGuardadosEnDisco: 0
+  borrarCheckpointsEnDisco: 0
   desbloquearFasesHasta: 0
-  resetearProgresoFases: 1
-  ignorarBloqueosFases: 1
+  resetearProgresoFases: 0
+  ignorarBloqueosFases: 0
   mostrarLogResumen: 1
 --- !u!4 &448340809
 Transform:
