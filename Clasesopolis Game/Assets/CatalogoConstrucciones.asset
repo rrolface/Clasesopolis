@@ -18,7 +18,7 @@ MonoBehaviour:
     descripcion: "s una ic\xF3nica escultura de bronce de 3,5 metros de altura y
       3 toneladas, creada por el artista Hernando Tejada en 1996 y donada a Cali,
       Colombia"
-    icono: {fileID: 21300000, guid: dd186ca06b34ff740a17eec44a2d8eac, type: 3}
+    icono: {fileID: 21300000, guid: 0bb49785a1ba942f2b1c15b1937a94c7, type: 3}
     prefab: {fileID: 6236431798219794533, guid: c0e47bd1b298ac645847ac64714b8054, type: 3}
     costoXP: 30
   - id: build_2
@@ -26,14 +26,14 @@ MonoBehaviour:
     descripcion: "La iglesia La Ermita en Cali, Colombia, es un ic\xF3nico templo
       neog\xF3tico construido entre 1930 y 1948 tras la destrucci\xF3n de una construcci\xF3n
       colonial anterior por un terremoto en 1925."
-    icono: {fileID: 21300000, guid: 360c124cf291cc6419bfb1384e423051, type: 3}
+    icono: {fileID: 21300000, guid: 42fc42fa645264f309e8026af37a9958, type: 3}
     prefab: {fileID: 4980500797645785915, guid: 6c7eaf6673a09114180c81c7d389e0bf, type: 3}
     costoXP: 30
   - id: build_3
     nombre: Tres cruces
     descripcion: "Cerro tutelar de la ciudad de Cali, Colombia ubicado en el corregimiento
       de Montebello en el \xE1rea rural del municipio."
-    icono: {fileID: 21300000, guid: 360c124cf291cc6419bfb1384e423051, type: 3}
+    icono: {fileID: 21300000, guid: 0b7c775996d584665b195c6393c2212a, type: 3}
     prefab: {fileID: 8980051155797676916, guid: 22a204fbf5b81764ca6d0ca8ff490a97, type: 3}
     costoXP: 30
   - id: build_4
@@ -42,7 +42,7 @@ MonoBehaviour:
       de 26 metros de altura, ubicado en el Cerro de los Cristales. Inaugurado en
       1953, fue construido como s\xEDmbolo de paz y reconciliaci\xF3n para conmemorar
       el cincuentenario del fin de la Guerra de los Mil D\xEDas"
-    icono: {fileID: 21300000, guid: 360c124cf291cc6419bfb1384e423051, type: 3}
+    icono: {fileID: 21300000, guid: 1a8fbcd8a50174376b5ede6abcd6b49c, type: 3}
     prefab: {fileID: 4180214034636735622, guid: bf773dbe86a2f1f4194c39a9a0d7742f, type: 3}
     costoXP: 30
   - id: build_6
